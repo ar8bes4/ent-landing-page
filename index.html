@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浜松医科大学 耳鼻咽喉科・頭頸部外科 | 入局者向け特設サイト</title>
+    <meta name="description" content="浜松医科大学 耳鼻咽喉科・頭頸部外科の新入局員向け特設サイトです。私たちの理念、専門領域、そして共に働くチームをご紹介します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Noto Sans JP', 'sans-serif'],
+                    },
+                    colors: {
+                        navy: {
+                            900: '#0a0f1e',
+                            800: '#111827',
+                            700: '#1f2937',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                        },
+                        violet: {
+                            500: '#8b5cf6',
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0f1e; }
+        ::-webkit-scrollbar-thumb { background: #1f2937; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #374151; }
+        
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-navy-900 text-gray-200 font-sans antialiased overflow-x-hidden selection:bg-cyan-500 selection:text-white">
+
+    <!-- Fixed Header -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-300" id="header">
+        <div class="absolute inset-0 bg-navy-900/80 backdrop-blur-md border-b border-white/10"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-400 to-violet-500 flex items-center justify-center text-sm">H</span>
+                        浜松医科大学 <span class="font-light text-cyan-400">耳鼻咽喉科</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">理念</a>
+                    <a href="#specialties" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">専門領域</a>
+                    <a href="#staff" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">スタッフ</a>
+                    <a href="#join" class="text-sm font-medium text-gray-300 hover:text-white transition-colors">入局案内</a>
+                </nav>
+                <div class="hidden md:block">
+                    <a href="#contact" class="inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-white/10 hover:bg-white/20 border-white/20 transition-all duration-300 hover:shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+                        お問い合わせ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==')] [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white mb-8 animate-fade-in-up">
+                医療の最前線で、<br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">あなたの可能性</span>をひらく。
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-10 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
+                浜松医科大学 耳鼻咽喉科・頭頸部外科では、共に未来の医療を創り、地域医療から高度先進医療までを担う情熱ある若手医師を募集しています。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
+                <a href="#join" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-navy-900 bg-cyan-400 hover:bg-cyan-300 transition-all duration-300 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]">
+                    入局について詳しく
+                </a>
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full text-white glass-card hover:bg-white/10 transition-all duration-300">
+                    見学・相談を申し込む
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-cyan-400 font-semibold tracking-wide uppercase text-sm mb-2">Our Philosophy</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">私たちの理念</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl p-8 reveal hover:-translate-y-2 transition-transform duration-300">
+                    <div class="w-12 h-12 rounded-lg bg-cyan-500/20 flex items-center justify-center mb-6 text-cyan-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">多様性の尊重</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        一人ひとりの個性とキャリアプランを尊重し、それぞれの目標に向かって成長できる柔軟な環境を提供します。
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl p-8 reveal hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 rounded-lg bg-violet-500/20 flex items-center justify-center mb-6 text-violet-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">ワークライフバランス</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        充実したプライベートが質の高い医療を生むと考え、働きやすい勤務体制と休暇取得を推進しています。
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl p-8 reveal hover:-translate-y-2 transition-transform duration-300" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center mb-6 text-blue-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">臨床・研究・教育の調和</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        高度な臨床技術の習得はもちろん、アカデミックな研究や後進の教育にも力を入れ、総合的な医療人を育成します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-24 relative z-10 border-t border-white/5 bg-navy-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-cyan-400 font-semibold tracking-wide uppercase text-sm mb-2">Specialties</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">幅広い専門領域</h3>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">耳鼻咽喉科・頭頸部外科の全領域を網羅し、各分野のスペシャリストから直接指導を受けられる環境です。</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="glass-card p-6 rounded-xl text-center reveal border-cyan-500/20 hover:border-cyan-500/50 transition-colors">
+                    <span class="text-lg font-medium text-white">耳科学</span>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center reveal border-violet-500/20 hover:border-violet-500/50 transition-colors" style="transition-delay: 50ms;">
+                    <span class="text-lg font-medium text-white">鼻科学</span>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center reveal border-blue-500/20 hover:border-blue-500/50 transition-colors" style="transition-delay: 100ms;">
+                    <span class="text-lg font-medium text-white">頭頸部外科</span>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center reveal border-cyan-500/20 hover:border-cyan-500/50 transition-colors" style="transition-delay: 150ms;">
+                    <span class="text-lg font-medium text-white">睡眠医学</span>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center reveal border-violet-500/20 hover:border-violet-500/50 transition-colors" style="transition-delay: 200ms;">
+                    <span class="text-lg font-medium text-white">音声・嚥下</span>
+                </div>
+                <div class="glass-card p-6 rounded-xl text-center reveal border-blue-500/20 hover:border-blue-500/50 transition-colors" style="transition-delay: 250ms;">
+                    <span class="text-lg font-medium text-white">アレルギー</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-cyan-400 font-semibold tracking-wide uppercase text-sm mb-2">Our Team</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">指導医紹介</h3>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="glass-card rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-center reveal">
+                    <div class="w-48 h-48 rounded-full flex-shrink-0 bg-gradient-to-br from-navy-700 to-navy-800 p-1 border border-white/10 overflow-hidden relative">
+                        <!-- Placeholder Gradient Avatar -->
+                        <div class="w-full h-full rounded-full bg-gradient-to-br from-cyan-900 to-violet-900 flex items-center justify-center">
+                            <span class="text-4xl text-white/50 font-light">M</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-4">
+                            <span class="text-cyan-400 text-sm font-semibold">助教</span>
+                            <h4 class="text-3xl font-bold text-white mt-1">森田 浩太朗</h4>
+                        </div>
+                        
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <span class="text-gray-500 block mb-1">【専門領域】</span>
+                                <span class="text-gray-300">耳鼻咽喉科一般、頭頸部腫瘍の診断・治療</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block mb-1">【専門医・認定医】</span>
+                                <span class="text-gray-300">日本耳鼻咽喉科学会専門医・指導医、日本がん治療認定医機構がん治療認定医、頭頸部がん専門医</span>
+                            </div>
+                            <div>
+                                <span class="text-gray-500 block mb-1">【学歴】</span>
+                                <span class="text-gray-300">平成22年 東海大学医学部卒</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section id="join" class="py-24 relative z-10 border-t border-white/5 bg-navy-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-cyan-400 font-semibold tracking-wide uppercase text-sm mb-2">Join Us</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-white">入局までの流れ</h3>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative border-l border-white/10 ml-4 md:ml-0 md:pl-0">
+                    <!-- Step 1 -->
+                    <div class="mb-12 relative md:pl-10 pl-8 reveal">
+                        <div class="absolute w-8 h-8 bg-navy-900 border-2 border-cyan-400 rounded-full -left-4 md:-left-4 top-0 flex items-center justify-center shadow-[0_0_10px_rgba(34,211,238,0.5)]">
+                            <span class="text-cyan-400 text-xs font-bold">1</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">見学・ご相談</h4>
+                        <p class="text-gray-400 text-sm">まずは医局の雰囲気を知っていただくため、病院見学にお越しください。オンラインでのご相談も随時受け付けています。どんな些細なことでもお気軽にご連絡ください。</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="mb-12 relative md:pl-10 pl-8 reveal">
+                        <div class="absolute w-8 h-8 bg-navy-900 border-2 border-violet-400 rounded-full -left-4 md:-left-4 top-0 flex items-center justify-center">
+                            <span class="text-violet-400 text-xs font-bold">2</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">面談</h4>
+                        <p class="text-gray-400 text-sm">教授および医局長との面談を行い、あなたのキャリアプランや希望する働き方について詳しくお伺いします。</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="relative md:pl-10 pl-8 reveal">
+                        <div class="absolute w-8 h-8 bg-navy-900 border-2 border-blue-400 rounded-full -left-4 md:-left-4 top-0 flex items-center justify-center">
+                            <span class="text-blue-400 text-xs font-bold">3</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-2">履歴書提出</h4>
+                        <p class="text-gray-400 text-sm mb-4">入局をご希望される方は、以下のリンクから履歴書をダウンロードし、メールにてご提出ください。</p>
+                        <a href="#" class="inline-flex items-center text-sm text-cyan-400 hover:text-cyan-300 font-medium transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            履歴書をダウンロード (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">お問い合わせ</h2>
+            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">見学のお申し込み、入局に関するご相談など、いつでもお気軽にお問い合わせください。</p>
+            
+            <div class="glass-card rounded-2xl p-8 max-w-2xl mx-auto inline-block text-left">
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="mt-1 flex-shrink-0 text-cyan-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm text-gray-500 font-medium">お電話</p>
+                            <p class="text-lg text-white font-mono mt-1">053-435-2252</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="mt-1 flex-shrink-0 text-violet-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm text-gray-500 font-medium">メール (担当: 今井 篤志)</p>
+                            <p class="text-lg text-white font-mono mt-1">orlhns@hama-med.ac.jp</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="mt-1 flex-shrink-0 text-blue-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="ml-4">
+                            <p class="text-sm text-gray-500 font-medium">所在地</p>
+                            <p class="text-base text-white mt-1">〒431-3192<br />静岡県浜松市中央区半田山一丁目20番1号</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 bg-navy-900 text-center">
+        <p class="text-gray-500 text-sm">&copy; 2024 浜松医科大学 耳鼻咽喉科・頭頸部外科. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts for animations and interactions -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+
+        // Intersection Observer for scroll animations (Reveal effect)
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
