@@ -18,6 +18,7 @@ ent-landing-page/
 ├── index.html             # メインページ（Tailwind CSS + JS 完全内包）
 ├── introduction.html      # 教室紹介・教授挨拶ページ
 ├── student-clerkship.html # 学生病院実習のご案内ページ
+├── recruit.html           # 採用情報・専門研修ページ
 ├── assets/
 │   └── images/            # スタッフ写真・OGP 画像などを配置
 └── README.md
