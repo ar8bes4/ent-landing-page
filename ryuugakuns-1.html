@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留学体験記：杉山夏樹先生 | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室からスウェーデン・ルンド大学へ留学された杉山夏樹先生の体験記です。恵まれた研究環境、HPV陽性中咽頭癌細胞株を用いた基礎研究、臨床とは異なるロマンについてご紹介します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(16, 32, 51, 0.95);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">留学体験記</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="index.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">ホーム</a>
+                <a href="staff.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">スタッフ紹介</a>
+                <a href="student-clerkship.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">学生実習のご案内</a>
+                <a href="recruit.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">採用・専門研修</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section class="pt-16 pb-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-blue font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-blue"></span>
+                    <span>Study Abroad Memoir</span>
+                    <span class="w-8 h-0.5 bg-brand-blue"></span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-black text-brand-navy leading-tight mb-4 reveal">
+                    留学体験記
+                </h1>
+                <p class="text-lg sm:text-xl font-bold text-brand-teal mb-6 reveal" style="transition-delay: 100ms;">
+                    スウェーデン・ルンド大学留学
+                </p>
+                <div class="inline-block px-4 py-2 bg-white border border-brand-line rounded-full shadow-sm text-sm font-bold text-brand-navy reveal" style="transition-delay: 150ms;">
+                    杉山 夏樹 先生（2022年5月31日 記）
+                </div>
+            </div>
+        </section>
+
+        <!-- 基本情報・概要カード -->
+        <section class="py-6 max-w-4xl mx-auto px-4 sm:px-6 reveal" style="transition-delay: 200ms;">
+            <div class="codex-card p-6 sm:p-8 bg-white grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="border-b md:border-b-0 md:border-r border-brand-line pb-4 md:pb-0 md:pr-6">
+                    <span class="text-xs font-bold text-brand-teal uppercase tracking-wider block mb-1">Destination</span>
+                    <h3 class="text-lg font-black text-brand-navy">留学先・ラボ</h3>
+                    <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                        スウェーデン ルンド大学<br />
+                        Johan教授 ＆ Lars先生の研究室
+                    </p>
+                </div>
+                <div class="border-b md:border-b-0 md:border-r border-brand-line pb-4 md:pb-0 md:pr-6">
+                    <span class="text-xs font-bold text-brand-teal uppercase tracking-wider block mb-1">Research Theme</span>
+                    <h3 class="text-lg font-black text-brand-navy">研究テーマ</h3>
+                    <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                        HPV陽性中咽頭癌細胞株を用いた、プロテアソーム阻害剤とシスプラチンの併用療法に関する実験（in vitro & in vivo）
+                    </p>
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-brand-teal uppercase tracking-wider block mb-1">Lab Environment</span>
+                    <h3 class="text-lg font-black text-brand-navy">研究室体制</h3>
+                    <p class="text-sm text-brand-muted mt-2 leading-relaxed">
+                        技術者2名を加えた5人体制（前立腺癌研究の院生2名が加わる時期もあり）。基礎から丁寧に学べる非常に恵まれた環境。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 体験記本文セクション -->
+        <section class="py-12 max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="bg-white codex-card p-8 sm:p-12 space-y-8 reveal" style="transition-delay: 250ms;">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3 border-b border-brand-line pb-4">
+                    <span class="w-1.5 h-6 bg-brand-blue rounded-full"></span>
+                    恵まれた環境での基礎研究と、そこにあるロマン
+                </h2>
+
+                <div class="text-sm sm:text-base text-brand-navy leading-relaxed space-y-6 font-medium">
+                    <p>
+                        私は過去に4人の先生方が留学されていたラボでJohan教授とLars先生のご指導のもと研究を進めて参りました。同じラボで5人も留学生を受け入れるのは珍しいことで、ルンド大学のニュースレターにも取り上げられました（写真③）。
+                    </p>
+                    <p>
+                        私たちの研究グループは技術者の方２人が加わった5人体制でしたが、前立腺癌の研究をしていた院生2人が加わって7人になることもありました。技術者の方は2人ともベテランなので、基礎研究の経験がない私にとってはいつでも何でも聞ける環境下にあり大変恵まれていました。
+                    </p>
+                    <p>
+                        私が行っていた研究は、数年前にこのラボで樹立されたHPV陽性の中咽頭癌細胞株を用いて、血液内科では既に臨床使用されているプロテアソーム阻害剤と既存のシスプラチンとの併用療法の効果を確かめる実験でした。このHPV陽性癌細胞株はマウスモデルもあり、他のグループと共同で in vivo の実験にも参加させていただきました。
+                    </p>
+
+                    <!-- ハイライト・引用表現 -->
+                    <div class="my-8 p-6 bg-blue-50 border-l-4 border-brand-blue rounded-r-lg shadow-sm">
+                        <p class="italic text-brand-navy">
+                            「臨床ではガイドラインや経験を基に治療を検討していくため、ある程度の道筋がありますが、基礎研究ではまだ解明されていない部分を探求していくため想定していた結果と異なる結果が出る事の方が多く、その度に試行錯誤して実験を繰り返すという臨床とはまた違った難しさがあると感じました。ただ、臨床で用いられている治療はどれも基礎研究を介して確立されてきたもので、『将来的にもしかしたら自分の研究が患者さんの役に立つかもしれない』というロマンがあると思います。」
+                        </p>
+                    </div>
+
+                    <p>
+                        2年間の留学生活を通して良い先生と仲間に出会い、恵まれた環境下で研究という新たな世界を経験できた事は私の宝物になりました。今後の医師人生にも活かしていけたらと思っております。
+                    </p>
+                    <p>
+                        このような貴重な機会をいただいた浜松医科大学耳鼻咽喉科・頭頸部外科の先生方には大変感謝しております。またこの留学記が後進の先生方の将来を考える一助となれば幸いです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 他の留学体験記への案内カード -->
+        <section class="pb-12 max-w-4xl mx-auto px-4 sm:px-6 reveal">
+            <div class="codex-card p-6 sm:p-8 bg-gradient-to-r from-brand-navy to-[#1a304d] text-white flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="text-xl font-black mb-2">他の留学体験記を読む</h3>
+                    <p class="text-sm text-slate-300">アメリカ・ミシガン大学へ留学し、唾液腺癌（腺様嚢胞癌）の癌幹細胞を標的とした治療研究に取り組まれた佐原聡甫先生の体験記です。</p>
+                </div>
+                <a href="ryuugakuss.html" class="inline-flex items-center gap-2 px-5 py-3 bg-brand-blue hover:bg-brand-blue/80 text-white font-bold text-sm rounded-lg transition-colors whitespace-nowrap shadow-md">
+                    <span>佐原聡甫先生の体験記へ</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- 写真ギャラリーセクション -->
+        <section id="gallery" class="py-12 bg-white border-y border-brand-line">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-10 text-center reveal">
+                    <h2 class="text-2xl font-black text-brand-navy inline-flex items-center gap-3">
+                        <span class="w-1.5 h-6 bg-brand-teal rounded-full"></span>
+                        ルンドでの生活と研究風景
+                    </h2>
+                    <p class="text-sm text-brand-muted mt-2">写真をクリックすると拡大表示します。</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal" style="transition-delay: 100ms;">
+                    <!-- 写真 1-a -->
+                    <div class="codex-card p-3 bg-white flex flex-col justify-between group hover:shadow-md transition-shadow">
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg border border-brand-line bg-brand-paper cursor-zoom-in" onclick="openLightbox('images/ryugaku_sugiyama_1.jpg', '写真①-a：歴史を感じるルンド大聖堂')">
+                            <img src="images/ryugaku_sugiyama_1.jpg" alt="ルンド大聖堂" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <p class="text-xs text-brand-navy font-bold text-center mt-3">写真①-a：大聖堂</p>
+                    </div>
+
+                    <!-- 写真 1-b -->
+                    <div class="codex-card p-3 bg-white flex flex-col justify-between group hover:shadow-md transition-shadow">
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg border border-brand-line bg-brand-paper cursor-zoom-in" onclick="openLightbox('images/ryugaku_sugiyama_2.jpg', '写真①-b：週末限定の市場（中央広場）の様子')">
+                            <img src="images/ryugaku_sugiyama_2.jpg" alt="市場" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <p class="text-xs text-brand-navy font-bold text-center mt-3">写真①-b：週末限定の市場（中央広場）</p>
+                    </div>
+
+                    <!-- 写真 2 -->
+                    <div class="codex-card p-3 bg-white flex flex-col justify-between group hover:shadow-md transition-shadow">
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg border border-brand-line bg-brand-paper cursor-zoom-in" onclick="openLightbox('images/ryugaku_sugiyama_3.jpg', '写真②：Kampradhusetの食堂で同僚の皆さんと祝賀会')">
+                            <img src="images/ryugaku_sugiyama_3.jpg" alt="同僚の皆さんと祝賀会" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <p class="text-xs text-brand-navy font-bold text-center mt-3">写真②：Kampradhusetの食堂で祝賀会</p>
+                    </div>
+
+                    <!-- 写真 3 -->
+                    <div class="codex-card p-3 bg-white flex flex-col justify-between group hover:shadow-md transition-shadow">
+                        <div class="aspect-w-4 aspect-h-3 overflow-hidden rounded-lg border border-brand-line bg-brand-paper cursor-zoom-in" onclick="openLightbox('images/ryugaku_sugiyama_4.jpg', '写真③：ルンド大学のニュースレターに掲載された記事')">
+                            <img src="images/ryugaku_sugiyama_4.jpg" alt="ニュースレター" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <p class="text-xs text-brand-navy font-bold text-center mt-3">写真③：ニュースレター</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ライトボックスモーダル -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="absolute top-4 right-4 text-white text-3xl font-black cursor-pointer hover:text-brand-teal transition-colors">&times;</span>
+        <div class="max-w-4xl w-full p-4 flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="拡大画像" class="max-h-[80vh] w-auto rounded-lg shadow-2xl border border-brand-line" />
+            <p id="lightbox-caption" class="text-white text-sm font-bold mt-4 tracking-wide text-center"></p>
+        </div>
+    </div>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <span>|</span>
+                <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション・ライトボックス用スクリプト -->
+    <script>
+        // IntersectionObserver for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+
+        // Lightbox Functions
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+            
+            img.src = src;
+            cap.innerText = caption;
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Scroll lock
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.remove('active');
+            document.body.style.overflow = ''; // Scroll unlock
+        }
+
+        // Close on ESC key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+</html>

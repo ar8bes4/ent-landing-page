@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>関連病院・連携施設 | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室の関連病院・連携施設のご案内。静岡県内17の中核病院をはじめ、地域医療を支える強固なネットワークと所属医師について。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">関連病院・連携施設</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="#east" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">静岡県東部</a>
+                <a href="#central" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">静岡県中部</a>
+                <a href="#west" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">静岡県西部</a>
+                <a href="#aichi" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">愛知県東部</a>
+                <a href="#others" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">その他連携</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section class="pt-12 pb-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    <span>Affiliated Hospitals & Facilities</span>
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-black text-brand-navy leading-tight mb-6 reveal">
+                    関連病院・連携施設
+                </h1>
+                <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto leading-relaxed reveal" style="transition-delay: 100ms;">
+                    静岡県全域から愛知県東部にわたるネットワークを構築し、<br class="hidden sm:inline" />
+                    各地域の中核病院において質の高い耳鼻咽喉科・頭頸部外科診療を提供しています。<br />
+                    <span class="text-xs font-semibold text-brand-blue bg-blue-50/50 border border-blue-100 rounded px-2.5 py-1 inline-block mt-3">※ 太字で記載された医師は専門研修指導医です</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- 地図セクション -->
+        <section class="pb-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 reveal" style="transition-delay: 200ms;">
+            <div class="codex-card p-4 sm:p-6 bg-white flex flex-col items-center">
+                <h2 class="text-lg font-bold text-brand-navy mb-4 flex items-center gap-2">
+                    <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path></svg>
+                    関連病院・連携施設 配置マップ
+                </h2>
+                <a href="images/affiliation_map.png" target="_blank" class="w-full max-w-5xl overflow-hidden rounded-lg border border-brand-line shadow-inner block hover:opacity-95 transition-opacity cursor-zoom-in" title="クリックして拡大表示（別タブで開きます）">
+                    <img src="images/affiliation_map.png" alt="関連病院・連携施設 配置マップ（クリックして拡大）" class="w-full h-auto" />
+                </a>
+            </div>
+        </section>
+
+        <!-- 静岡県東部 -->
+        <section id="east" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-blue rounded-full"></span>
+                    静岡県東部
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- 沼津市立病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">沼津市立病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>佐々木 豊</strong>、井藤 雄次、松田 知樹、宮嶋 佑
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_be7420c2969a475daa400a5e72f7cb07.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 富士宮市立病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">富士宮市立病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>足守 直樹</strong>、猪瀬 祐気、櫻井 絢矢
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_47a6b3e21b364d7daf5e2718f04d2492.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 静岡県立静岡がんセンター -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">静岡県立静岡がんセンター</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                林 暁利、別所 祐樹
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full py-2 bg-gray-50 border border-gray-200 text-gray-400 text-xs font-bold rounded-lg flex items-center justify-center gap-1.5 cursor-not-allowed">
+                        紹介PDF準備中
+                    </div>
+                </div>
+            </div>
+
+            <!-- 非常勤（東部） -->
+            <div class="mt-6 bg-white p-5 rounded-xl border border-brand-line reveal">
+                <span class="text-xs font-bold text-brand-muted block mb-2">【非常勤医師派遣先】</span>
+                <p class="text-sm text-gray-800">聖隷沼津病院</p>
+            </div>
+        </section>
+
+        <!-- 静岡県中部 -->
+        <section id="central" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-teal rounded-full"></span>
+                    静岡県中部
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- 静岡済生会総合病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">静岡済生会総合病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>武林 悟</strong>、望月 大極、遠藤 志織、下平 有希、寳積 志帆、田中 裕太郎
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_453b1d709fec41cca6e9e90b294b424c.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 焼津市立総合病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">焼津市立総合病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>石川 竜司</strong>、秋田 紗希、井上 有美、森福 宏、鈴木 ひな
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_832a7c647f0f4c268ee35a3830bc2c4a.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 藤枝市立総合病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">藤枝市立総合病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>森田 祥</strong>、丹羽 彩、千野 帆夏
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_526700986dae437fa8828d11341cc5ed.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 清水厚生病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">清水厚生病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                平岡 美由紀
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c2d2c143473846deae5b9cee7b724bb2.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 静岡厚生病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">静岡厚生病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>大輪 達仁</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_127d81b4695f4e35ba5328f877f79398.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 静岡県立こども病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">静岡県立こども病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                橋本 亜矢子
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_49980f0b42694f508c923646ef6e33a0.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+            </div>
+
+            <!-- 非常勤（中部） -->
+            <div class="mt-6 bg-white p-5 rounded-xl border border-brand-line reveal">
+                <span class="text-xs font-bold text-brand-muted block mb-2">【非常勤医師派遣先】</span>
+                <p class="text-sm text-gray-800">静岡市立清水病院</p>
+            </div>
+        </section>
+
+        <!-- 静岡県西部 -->
+        <section id="west" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-navy rounded-full"></span>
+                    静岡県西部
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- 総合病院聖隷浜松病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">総合病院聖隷浜松病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>岡村 純</strong>、松下 安理華、森 泰樹、中村 友樹、渡邉 尚喜、濵野 一太、仲地 真海、山口 真央
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_2897c3ad81674f5a8ad3adbe92d8bddb.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 浜松医療センター -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">浜松医療センター</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>荒井 真木</strong>、<strong>水田 邦博</strong>、大石 宏虎、植田 翔
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_b439390d5fcd47fe999666dfb5338707.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 総合病院聖隷三方原病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">総合病院聖隷三方原病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>野田 和洋</strong>、南條 茉央、上村 広希、藤森 拓、堀井 彩花
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_011efd42ba824eb4a120d3d87af8ec39.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 遠州病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">遠州病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>浜田 登</strong>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_ab389677d1b84c1e812880891c43d6cc.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 中東遠総合医療センター -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">中東遠総合医療センター</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>杉山 夏樹</strong>、竹内 実喜子、松下 賢悟、中嶋 慎太郎
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_9df876d627824ddd925b4926bdde63f6.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+
+                <!-- 磐田市立総合病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">磐田市立総合病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                <strong>新村 大地</strong>、<strong>泉 智沙子</strong>、服部 大地、大野 智里
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_deb5c6ad8fac47e0be8f249b8c486401.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+            </div>
+
+            <!-- 非常勤（西部） -->
+            <div class="mt-6 bg-white p-5 rounded-xl border border-brand-line reveal">
+                <span class="text-xs font-bold text-brand-muted block mb-2">【非常勤医師派遣先】</span>
+                <p class="text-sm text-gray-800 leading-relaxed">
+                    共立湖西総合病院、榛原総合病院、御前崎総合病院、菊川市立総合病院、公立森町病院、浜松赤十字病院、浜松市立療育センター附属診療所、天竜病院
+                </p>
+            </div>
+        </section>
+
+        <!-- 愛知県東部 -->
+        <section id="aichi" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-muted rounded-full"></span>
+                    愛知県東部
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- 青山総合病院 -->
+                <div class="codex-card p-6 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">青山総合病院</h3>
+                        <div class="text-sm text-brand-muted mb-6 leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">常勤医師</span>
+                            <p class="text-gray-800">
+                                種田 泉
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_e53da27a8127482e921170539b086049.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2 bg-[#eef7fb] hover:bg-brand-blue hover:text-white text-brand-blue text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-1.5 border border-blue-200">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        紹介PDFを表示
+                    </a>
+                </div>
+            </div>
+
+            <!-- 非常勤（愛知） -->
+            <div class="mt-6 bg-white p-5 rounded-xl border border-brand-line reveal">
+                <span class="text-xs font-bold text-brand-muted block mb-2">【非常勤医師派遣先】</span>
+                <p class="text-sm text-gray-800">新城市民病院、東栄医療センター</p>
+            </div>
+        </section>
+
+        <!-- その他（連携・関連施設） -->
+        <section id="others" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-gradient-to-br from-brand-blue to-brand-teal rounded-full"></span>
+                    その他（連携・関連施設）
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+                <!-- 連携大学・医療機関 -->
+                <div class="codex-card p-6 lg:col-span-2">
+                    <h3 class="text-base font-bold text-brand-navy mb-4 pb-2 border-b border-brand-line flex items-center gap-2">
+                        <svg class="w-4 h-4 text-brand-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        主な連携医療機関・大学
+                    </h3>
+                    <ul class="grid grid-cols-2 gap-x-4 gap-y-3 text-sm text-gray-800 font-medium pl-2">
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>岩手医科大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>自治医科大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>昭和大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>名古屋大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>藤田医科大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>京都府立医科大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>関西医科大学</li>
+                        <li class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal"></span>静岡赤十字病院</li>
+                    </ul>
+                </div>
+
+                <!-- 国内研修先 -->
+                <div class="codex-card p-6">
+                    <h3 class="text-base font-bold text-brand-navy mb-4 pb-2 border-b border-brand-line flex items-center gap-2">
+                        <svg class="w-4 h-4 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        国内研修先所属（特別枠）
+                    </h3>
+                    <ul class="space-y-4 text-sm">
+                        <li class="leading-relaxed">
+                            <span class="text-xs font-bold text-brand-blue block mb-0.5">東京慈恵会医科大学</span>
+                            <span class="text-gray-800 font-medium">増田 守 （国内研修）</span>
+                        </li>
+                        <li class="leading-relaxed">
+                            <span class="text-xs font-bold text-brand-teal block mb-0.5">国立国際医療センター</span>
+                            <span class="text-gray-800 font-medium">池羽 宇宙 （国内研修）</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

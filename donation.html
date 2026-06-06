@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご寄付のお願い | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室への奨学寄附金のご案内です。未来の医療を支える独自性の高い医学研究や、静岡県の耳鼻咽喉科診療を担う臨床医の育成にご支援をお願いいたします。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイルでは非表示、PCで表示の一貫した構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">ご寄付のお願い</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="#message" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">趣旨</a>
+                <a href="#research" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">研究紹介</a>
+                <a href="#guide" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">お申込み手順</a>
+                <a href="#tax" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">税制上の優遇</a>
+                <a href="#contact" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">お問い合わせ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section id="message" class="pt-12 pb-16 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    <span>Donation Request</span>
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-black text-brand-navy leading-tight mb-8 reveal">
+                    ご寄付のお願い
+                </h1>
+                
+                <div class="codex-card p-8 sm:p-10 text-left reveal space-y-6 leading-relaxed text-brand-muted">
+                    <p>
+                        浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室では、これまで独自性が高い医学研究と、静岡県の耳鼻咽喉科診療に貢献する臨床医の育成に努めてまいりました。
+                    </p>
+                    <p>
+                        一方で、昨今の医療や医学研究を取り巻く環境は厳しく、教育・研究の高い質を維持・担保するために資金の確保が極めて重要です。当講座における教育・研究を行うための資金のほとんどは、国からの科学研究費と皆様からの寄附金によってまかなわれております。
+                    </p>
+                    <p>
+                        これまでの活動を継続し、発展させていくため、団体や個人の皆さまからのご寄附を広くお受けしております。
+                    </p>
+                    <p>
+                        耳鼻咽喉科・頭頸部外科学の教育、研究、臨床のさらなる発展のため、教室員一同より一層努力してまいりますので、皆さまの格別のご支援を賜りますようお願い申し上げます。
+                    </p>
+                    <div class="border-t border-brand-line pt-6 mt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <span class="text-xs text-brand-muted font-bold">浜松医科大学 耳鼻咽喉科・頭頸部外科学講座</span>
+                        <span class="text-lg font-black text-brand-navy">教授 三澤 清</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 研究紹介セクション -->
+        <section id="research" class="py-16 bg-white border-y border-brand-line">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 reveal">
+                    <p class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-3">
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                        Our Research
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">現在進めている主な研究テーマ</h2>
+                    <p class="text-sm text-brand-muted mt-2">皆さまからのご支援は、主に以下のような先端医学研究に役立てられます。</p>
+                </div>
+
+                <div class="space-y-6 reveal">
+                    <!-- 頭頸部腫瘍グループ -->
+                    <div class="codex-card p-6 border-l-4 border-l-brand-blue">
+                        <h3 class="text-xl font-bold text-brand-navy mb-4 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-blue"></span>
+                            頭頸部腫瘍グループ
+                        </h3>
+                        <ul class="space-y-3 text-sm text-brand-muted pl-4 list-disc">
+                            <li>ヒトパピローマウイルス（HPV）関連中咽頭がんの新しい検査法開発の取り組み</li>
+                            <li>ナノスーツ®法を利用した超早期がん病変の検出法の開発</li>
+                            <li>リキッドバイオプシーによるセルフリーDNA解析</li>
+                            <li>シングルセル空間トランスクリプトミクスによる発癌メカニズムの解明</li>
+                            <li>質量顕微鏡による脂質代謝異常と腫瘍浸潤の関連の解明</li>
+                        </ul>
+                    </div>
+
+                    <!-- 難聴・小児気道グループ -->
+                    <div class="codex-card p-6 border-l-4 border-l-brand-teal">
+                        <h3 class="text-xl font-bold text-brand-navy mb-4 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-teal"></span>
+                            難聴・小児気道グループ
+                        </h3>
+                        <ul class="space-y-3 text-sm text-brand-muted pl-4 list-disc">
+                            <li>小児の難治疾患への新しい治療法への取り組み</li>
+                            <li>遺伝学的検査に基づいた難聴個別化医療の実用化研究</li>
+                            <li>語音聴取向上を目指した人工内耳装用方法の開発研究</li>
+                            <li>先天性サイトメガロウィルス感染症の克服を目指した早期診断法開発研究</li>
+                            <li>小児気道疾患における個別化医療実現を目指した術式・管理方法の開発研究</li>
+                        </ul>
+                    </div>
+
+                    <!-- 鼻・副鼻腔グループ -->
+                    <div class="codex-card p-6 border-l-4 border-l-brand-navy">
+                        <h3 class="text-xl font-bold text-brand-navy mb-4 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-navy"></span>
+                            鼻・副鼻腔グループ
+                        </h3>
+                        <ul class="space-y-3 text-sm text-brand-muted pl-4 list-disc">
+                            <li>難治性の副鼻腔疾患に対する新しい治療法開発の取り組み</li>
+                            <li>好酸球性副鼻腔炎に対するトリプトファン代謝異常を標的とした治療法の開発</li>
+                            <li>内反性乳頭腫の発がんメカニズムの解明</li>
+                        </ul>
+                    </div>
+
+                    <!-- 音声・喉頭グループ -->
+                    <div class="codex-card p-6 border-l-4 border-l-brand-muted">
+                        <h3 class="text-xl font-bold text-brand-navy mb-4 flex items-center gap-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-brand-muted"></span>
+                            音声・喉頭グループ
+                        </h3>
+                        <ul class="space-y-3 text-sm text-brand-muted pl-4 list-disc">
+                            <li>再発性呼吸器乳頭腫症に対する新しい診断法開発の取り組み</li>
+                            <li>ナノスーツ®法によるHPV粒子の電子顕微鏡観察法の開発</li>
+                            <li>再発予測スコアー（HARRPスコアー）の開発</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 奨学寄附金のご案内＆手続き -->
+        <section id="guide" class="py-16 bg-brand-paper border-b border-brand-line">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 reveal">
+                    <p class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-3">
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                        Scholarship Donation
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">奨学寄附金のご案内</h2>
+                </div>
+
+                <div class="codex-card p-8 sm:p-10 mb-12 reveal">
+                    <h3 class="text-lg font-bold text-brand-navy mb-3">奨学寄付金とは</h3>
+                    <p class="text-sm text-brand-muted leading-relaxed">
+                        企業や個人から教育研究の奨励を目的とする寄附金を受入れ、学術研究や教育の充実・発展に活用する制度です。当講座への寄付も可能です。
+                    </p>
+                </div>
+
+                <!-- お申込みの手順（ステップ形式） -->
+                <div class="reveal mb-16">
+                    <h3 class="text-xl font-black text-brand-navy text-center mb-10">寄附金のお申込みの手順</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                        <!-- Step 1 -->
+                        <div class="codex-card p-6 flex flex-col justify-between relative bg-white">
+                            <div>
+                                <span class="text-3xl font-black text-brand-blue/30 block mb-2">01</span>
+                                <h4 class="font-bold text-brand-navy mb-2">寄附申出書の記入</h4>
+                                <p class="text-xs text-brand-muted leading-relaxed">
+                                    下記のリンクから「寄附申出書」をダウンロードして必要事項をご記入ください。
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="codex-card p-6 flex flex-col justify-between relative bg-white">
+                            <div>
+                                <span class="text-3xl font-black text-brand-teal/30 block mb-2">02</span>
+                                <h4 class="font-bold text-brand-navy mb-2">申出書の提出</h4>
+                                <p class="text-xs text-brand-muted leading-relaxed">
+                                    大学の研究協力課産学連携係へご郵送・ご持参いただくか、耳鼻咽喉科講座（岡部）までご連絡いただければ代行手続きいたします。
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="codex-card p-6 flex flex-col justify-between relative bg-white">
+                            <div>
+                                <span class="text-3xl font-black text-brand-navy/20 block mb-2">03</span>
+                                <h4 class="font-bold text-brand-navy mb-2">お振込み</h4>
+                                <p class="text-xs text-brand-muted leading-relaxed">
+                                    大学での手続き完了後、大学より振込依頼書をお送りします。最寄りの銀行よりお振込みください。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 資料ダウンロードリンク -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal mb-16">
+                    <!-- 寄付申込書 -->
+                    <div class="codex-card p-6 text-center flex flex-col justify-between items-center bg-white">
+                        <div class="mb-4">
+                            <span class="text-xs text-brand-muted font-bold block mb-1">Microsoft Word形式</span>
+                            <h4 class="font-bold text-brand-navy text-sm">寄付申込書</h4>
+                        </div>
+                        <a href="https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_0a7c484891e74e158c8f03f4e75c373f.doc?dn=kifu_jibi.doc" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-brand-blue hover:bg-brand-blue/90 text-white text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            ダウンロード
+                        </a>
+                    </div>
+
+                    <!-- 記入例 -->
+                    <div class="codex-card p-6 text-center flex flex-col justify-between items-center bg-white">
+                        <div class="mb-4">
+                            <span class="text-xs text-brand-muted font-bold block mb-1">PDF形式</span>
+                            <h4 class="font-bold text-brand-navy text-sm">申込書 記入例</h4>
+                        </div>
+                        <a href="https://www.hama-med.ac.jp/research/mt_files/kifu2016_kinyuurei.pdf" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-brand-teal hover:bg-brand-teal/90 text-white text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            ダウンロード
+                        </a>
+                    </div>
+
+                    <!-- 大学HPリンク -->
+                    <div class="codex-card p-6 text-center flex flex-col justify-between items-center bg-white">
+                        <div class="mb-4">
+                            <span class="text-xs text-brand-muted font-bold block mb-1">浜松医科大学 公式サイト</span>
+                            <h4 class="font-bold text-brand-navy text-sm">大学HPの寄付案内</h4>
+                        </div>
+                        <a href="https://www.hama-med.ac.jp/research/collab/donations-res/index.html" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 bg-brand-navy hover:bg-brand-navy/90 text-white text-xs font-bold rounded-lg transition-colors flex items-center justify-center gap-2 shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            公式サイトを開く
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 税法上の優遇措置 -->
+        <section id="tax" class="py-16 bg-white border-b border-brand-line">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 reveal">
+                    <p class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-3">
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                        Tax Incentives
+                        <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    </p>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">税法上の優遇措置について</h2>
+                    <p class="text-sm text-brand-muted mt-2">浜松医科大学へのご寄付は、法人税法や所得税法における税制上の優遇措置が受けられます。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                    <!-- 法人からの寄付 -->
+                    <div class="codex-card p-6 sm:p-8 bg-brand-paper/50">
+                        <div class="w-10 h-10 rounded-lg bg-blue-50 text-brand-blue flex items-center justify-center mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">法人からのご寄附</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-4">
+                            寄附金の全額を税法上の「損金」に算入することが可能です。
+                        </p>
+                        <span class="text-xs font-semibold text-brand-blue bg-blue-50 px-2.5 py-1 rounded">
+                            法人税法第 37 条第 3 項第 2 号
+                        </span>
+                    </div>
+
+                    <!-- 個人からの寄付 -->
+                    <div class="codex-card p-6 sm:p-8 bg-brand-paper/50">
+                        <div class="w-10 h-10 rounded-lg bg-teal-50 text-brand-teal flex items-center justify-center mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        </div>
+                        <h3 class="text-lg font-bold text-brand-navy mb-3">個人からのご寄附</h3>
+                        <p class="text-xs text-brand-muted leading-relaxed mb-4">
+                            「寄附金控除」を受けることができます。2,000円を超える部分について、総所得金額の40%を限度に所得税対象所得から控除されます（所得税法第78条第2項第2号）。
+                        </p>
+                        <p class="text-xs text-brand-muted leading-relaxed mb-4">
+                            本学への寄附金は、静岡県における個人県民税の寄附金控除の対象に指定されています。寄附された年の翌年1月1日現在、静岡県内にお住まいの方は住民税の控除（寄附金税額控除）も併せて適用されます。
+                        </p>
+                        <span class="text-xs font-semibold text-brand-teal bg-teal-50 px-2.5 py-1 rounded">
+                            所得税法第 78 条第 2 項第 2 号
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ窓口 -->
+        <section id="contact" class="py-16 bg-brand-paper">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">お問い合わせ・手続きに関する窓口</h2>
+                    <p class="text-sm text-brand-muted mt-2">ご不明な点がございましたら、下記窓口までお気軽にお問い合わせください。</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal">
+                    <!-- 事務窓口 -->
+                    <div class="codex-card p-6 sm:p-8 bg-white flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-extrabold text-brand-blue block mb-1">大学公式窓口</span>
+                            <h3 class="text-lg font-bold text-brand-navy mb-4 pb-2 border-b border-brand-line">研究協力課 産学連携係</h3>
+                            <div class="space-y-3 text-sm text-brand-muted">
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">TEL:</span>
+                                    <span>053-435-2676</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">FAX:</span>
+                                    <span>053-435-2433</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">E-mail:</span>
+                                    <a href="mailto:sangaku@hama-med.ac.jp" class="text-brand-blue hover:underline">sangaku@hama-med.ac.jp</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 講座窓口 -->
+                    <div class="codex-card p-6 sm:p-8 bg-white flex flex-col justify-between">
+                        <div>
+                            <span class="text-xs font-extrabold text-brand-teal block mb-1">耳鼻咽喉科・頭頸部外科医局</span>
+                            <h3 class="text-lg font-bold text-brand-navy mb-4 pb-2 border-b border-brand-line">耳鼻咽喉科・頭頸部外科学講座</h3>
+                            <div class="space-y-3 text-sm text-brand-muted">
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">TEL:</span>
+                                    <span>053-435-2252</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">担当:</span>
+                                    <span>岡部 やよい</span>
+                                </p>
+                                <p class="flex items-center gap-2">
+                                    <span class="font-bold text-brand-navy w-12 text-xs">E-mail:</span>
+                                    <a href="mailto:yayoi@hama-med.ac.jp" class="text-brand-teal hover:underline">yayoi@hama-med.ac.jp</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <span>|</span>
+                <a href="affiliation.html" class="hover:text-brand-blue transition-colors">関連病院</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

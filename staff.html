@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スタッフ紹介 | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室を支える医師・専門スタッフのご紹介。各専門分野、資格、経歴、メッセージについてご紹介します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">スタッフ紹介</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="#prof" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">教授・准教授</a>
+                <a href="#assist" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">助教</a>
+                <a href="#staffs" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">医員</a>
+                <a href="#grad" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">大学院生</a>
+                <a href="#abroad" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">留学・非常勤</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section class="pt-12 pb-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    <span>Our Staff & Specialists</span>
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-black text-brand-navy leading-tight mb-6 reveal">
+                    スタッフ紹介
+                </h1>
+                <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto leading-relaxed reveal" style="transition-delay: 100ms;">
+                    浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室を支える、<br class="hidden sm:inline" />
+                    各分野のスペシャリストたちをご紹介します。
+                </p>
+            </div>
+        </section>
+
+        <!-- 教授・准教授・講師 -->
+        <section id="prof" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-blue rounded-full"></span>
+                    教授・准教授・講師
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 三澤 清 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_6b7e16e9064c4abca78cdae59c1c7ad2~mv2.jpg/v1/crop/x_922,y_0,w_1626,h_2432/fill/w_427,h_639,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8427_JPG.jpg" alt="三澤 清 教授" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">教授、副病院長</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">三澤　清</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>頭頸部腫瘍、睡眠時無呼吸症候群の診断・治療</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、日本気管食道科学会専門医、日本めまい平衡医学会認定めまい相談医、日本がん治療認定医、厚生労働省補聴器適合判定医</p>
+                                <p><strong>【学歴】</strong><br>平成7年 浜松医科大学医学部卒 / 医学博士</p>
+                                <p><strong>【趣味】</strong><br>庭の草むしり、ミシガングッズの収集</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「臨床も研究も楽しみながら継続的に！」</p>
+                    </div>
+                </div>
+
+                <!-- 瀧澤 義徳 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_b0d7f632683145be88f56e3cb09def2e~mv2.jpg/v1/crop/x_1026,y_0,w_1626,h_2432/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8449_JPG.jpg" alt="瀧澤 義徳 准教授" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">准教授</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">瀧澤　義徳</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>頭頸部腫瘍の診断・治療、音声障害・嚥下機能障害の診療</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、がん治療認定医・指導責任者、頭頸部がん専門医・指導医、アルミノックス治療医・指導医、日本気管食道科学会認定専門医、補聴器相談医</p>
+                                <p><strong>【学歴】</strong><br>平成13年 浜松医科大学医学部卒 / 平成25年 浜松医科大学医学部大学院卒 医学博士</p>
+                                <p><strong>【趣味】</strong><br>野鳥観察、スキューバダイビング</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「症状に合わせた円滑な診療を心がけています。お気軽にご相談ください。」</p>
+                    </div>
+                </div>
+
+                <!-- 今井 篤志 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_55a916390f6542e98d4ef0120cad373d~mv2.png/v1/crop/x_987,y_1468,w_1173,h_1754/fill/w_427,h_639,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1009_HEIC.png" alt="今井 篤志 病院准教授、講師" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">病院准教授、講師</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">今井　篤志</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、頭頸部腫瘍の診断・治療</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、補聴器相談医、がん治療認定医、頭頸部がん専門医・指導医、アルミノックス治療医・指導医</p>
+                                <p><strong>【学歴】</strong><br>平成15年 浜松医科大学医学部卒 / 医学博士</p>
+                                <p><strong>【趣味】</strong><br>読書・喫茶店</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「GO BLUE!」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 助教 -->
+        <section id="assist" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-teal rounded-full"></span>
+                    助教
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 森田 浩太朗 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_9909725d5b9b4786ba1f6d9dc7ed5f37~mv2.jpg/v1/crop/x_758,y_0,w_1626,h_2432/fill/w_427,h_639,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8403_JPG.jpg" alt="森田 浩太朗 助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-teal block mb-1">助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">森田　浩太朗</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、頭頸部腫瘍の診断・治療</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、日本がん治療認定医、頭頸部がん専門医</p>
+                                <p><strong>【学歴】</strong><br>平成22年 東海大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>音楽</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 喜夛 淳哉 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_bb36bd3a74194be38c4cba1de5306c4f~mv2.jpg/v1/crop/x_971,y_0,w_1626,h_2432/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8454_JPG.jpg" alt="喜夛 淳哉 助教、医局長" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-teal block mb-1">助教、医局長</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">喜夛　淳哉</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、耳科手術、小児耳鼻</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、耳科手術認定医、補聴器相談医、騒音性難聴担当医、日耳鼻補聴器キーパーソン</p>
+                                <p><strong>【学歴】</strong><br>平成23年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>旅行、自転車、映画鑑賞</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「難聴や耳の疾患、こどもの耳鼻科疾患に取り組んでいます。お困りのこと、不安なことがあれば相談してください。」</p>
+                    </div>
+                </div>
+
+                <!-- 加納 康太郎 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_a11c1dfbcbb647ff87453155001fe086~mv2.jpg/v1/crop/x_1011,y_0,w_1626,h_2432/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_86666_JPG.jpg" alt="加納 康太郎 助教、副医局長" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-teal block mb-1">助教、副医局長（総務）</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">加納　康太郎</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、鼻・副鼻腔疾患</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科専門医・指導医</p>
+                                <p><strong>【学歴】</strong><br>平成23年 大阪医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>読書　映画鑑賞</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「鼻水、鼻づまり、匂いの低下などの鼻に関するトラブルから、副鼻腔炎や鼻腔腫瘍まで幅広く対応しております。お気軽にご相談ください。」</p>
+                    </div>
+                </div>
+
+                <!-- 佐原 聡甫 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_4975217ecfd948b28c2d141ae3a69347~mv2.png/v1/crop/x_916,y_1791,w_1114,h_1665/fill/w_427,h_639,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1006_HEIC.png" alt="佐原 聡甫 助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-teal block mb-1">助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">佐原　聡甫</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、耳科手術</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、日本気管食道科学会専門医、補聴器相談医</p>
+                                <p><strong>【学歴】</strong><br>平成24年 浜松医科大学医学部卒 / 医学博士</p>
+                                <p><strong>【趣味】</strong><br>自転車</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 診療助教 -->
+        <section class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-navy rounded-full"></span>
+                    診療助教
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 菅原 康介 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_ccf707143d9a4cdc97122232380c5a44~mv2.png/v1/crop/x_1097,y_1777,w_959,h_1434/fill/w_428,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_1005_HEIC.png" alt="菅原 康介 診療助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">診療助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">菅原　康介</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、鼻・副鼻腔疾患</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医</p>
+                                <p><strong>【学歴】</strong><br>平成26年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>料理</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「患者様へ丁寧な説明と正確な治療を常に大切にして診療に臨みます。」</p>
+                    </div>
+                </div>
+
+                <!-- 松田 慈 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_21ec0519b13a4ccfb0643378e53321d1~mv2.png/v1/crop/x_986,y_1832,w_959,h_1434/fill/w_428,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_0999_HEIC.png" alt="松田 慈 診療助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">診療助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">松田　慈</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医</p>
+                                <p><strong>【学歴】</strong><br>平成28年 富山大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>スポーツ鑑賞</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「ひたむきに、一生懸命に、診療を行っていきます。」</p>
+                    </div>
+                </div>
+
+                <!-- 曽根 大貴 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_f57e9fa324104283851553ebe4b4e3d6~mv2.png/v1/crop/x_842,y_1269,w_1154,h_1728/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E6%9B%BD%E6%A0%B9_HEIC.png" alt="曽根 大貴 診療助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">診療助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">曽根　大貴</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、耳科手術</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医</p>
+                                <p><strong>【学歴】</strong><br>平成29年 富山大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>ゲーム、GoogleMap</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「わかりやすい説明を心がけております。」</p>
+                    </div>
+                </div>
+
+                <!-- 名倉 悠真 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_2caea3e2b6774d9c82e42289c43c0a55~mv2.png/v1/crop/x_925,y_1362,w_1065,h_1593/fill/w_428,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%90%8D%E5%80%89_HEIC.png" alt="名倉 悠真 診療助教" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">診療助教</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">名倉　悠真</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、睡眠時無呼吸症候群の診断・治療、めまい疾患</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医</p>
+                                <p><strong>【学歴】</strong><br>平成29年 山口大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>旅行・ランニング</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「大学に戻ってきました。改めてよろしくお願いします。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 医員 -->
+        <section id="staffs" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-blue rounded-full"></span>
+                    医員
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 三澤 由幾 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_1ee9490b2f084bcab66518c18a014c37~mv2.jpg/v1/crop/x_397,y_0,w_654,h_978/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8465e3_edited.jpg" alt="三澤 由幾 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">三澤　由幾</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、めまい疾患</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医、日本めまい平衡医学会認定めまい相談医、補聴器相談医</p>
+                                <p><strong>【学歴】</strong><br>平成12年 大阪医科大学卒 / 平成29年 浜松医科大学大学院卒 医学博士</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 玉腰 明日野 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_ed6ba9491c5c46259ce2f760fbf245c2~mv2.png/v1/crop/x_846,y_879,w_810,h_1212/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/MicrosoftTeams-image%20(4).png" alt="玉腰 明日野 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員、副医局長（教育）</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">玉腰　明日野</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医、緩和ケア研修会修了</p>
+                                <p><strong>【学歴】</strong><br>平成29年 金沢大学医薬保健学域医学類卒</p>
+                                <p><strong>【趣味】</strong><br>音楽鑑賞、パン屋めぐり</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 馬越 優征 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_d557dd12b44344bf81e737e5efb28a95~mv2.jpg/v1/crop/x_1087,y_0,w_1626,h_2432/fill/w_428,h_641,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8489.jpg" alt="馬越 優征 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">馬越　優征</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科頭頸部外科学会専門医、日本がん治療認定医</p>
+                                <p><strong>【学歴】</strong><br>平成30年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>散歩</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「患者さん一人ひとりに寄り添った診療を心掛けます。」</p>
+                    </div>
+                </div>
+
+                <!-- 中嶋 海帆子 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_5b6a426e07434573a561dacf85fc443d~mv2.png/v1/crop/x_947,y_1383,w_1080,h_1617/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E4%B8%AD%E5%B6%8B_HEIC.png" alt="中嶋 海帆子 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">中嶋　海帆子</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>なし</p>
+                                <p><strong>【学歴】</strong><br>令和4年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>読書</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「日進月歩の医療を常に学び、丁寧で確実な医療を届けられるよう邁進します。」</p>
+                    </div>
+                </div>
+
+                <!-- 相川 遂夫 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_60146be217364abc8ddc0bb19b62dde9~mv2.png/v1/crop/x_850,y_1385,w_1065,h_1595/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E7%9B%B8%E5%B7%9D_HEIC.png" alt="相川 遂夫 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">相川　遂夫</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>なし</p>
+                                <p><strong>【学歴】</strong><br>令和4年 東京医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>音楽鑑賞</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「毎日笑顔を忘れずに頑張ります！」</p>
+                    </div>
+                </div>
+
+                <!-- 髙瀨 ミキ -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_f7ea7990b1db4fe484ffafe5fc57afa0~mv2.png/v1/crop/x_875,y_1296,w_1065,h_1595/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E9%AB%98%E7%80%AC_HEIC.png" alt="髙瀨 ミキ 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">髙瀨　ミキ</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>なし</p>
+                                <p><strong>【学歴】</strong><br>令和5年 岡山大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>ドラマを観る</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「明るく元気に頑張ります！」</p>
+                    </div>
+                </div>
+
+                <!-- 増田 尚人 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_351cdea2c9014addb7cdd8589b606145~mv2.png/v1/crop/x_721,y_1340,w_1066,h_1596/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%A2%97%E7%94%B0_HEIC.png" alt="増田 尚人 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">増田　尚人</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>なし</p>
+                                <p><strong>【学歴】</strong><br>令和5年 富山大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>筋トレ、サウナ、猫、中日ドラゴンズ、登山、料理</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「浜松での診療のお役に立てるよう尽力して参ります。」</p>
+                    </div>
+                </div>
+
+                <!-- 古川 大起 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_c817dba3ca3e4ce3aa1c01ee01977903~mv2.png/v1/crop/x_871,y_1250,w_1066,h_1596/fill/w_428,h_641,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/%E5%8F%A4%E5%B7%9D_HEIC.png" alt="古川 大起 医員" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">古川　大起</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>なし</p>
+                                <p><strong>【学歴】</strong><br>令和6年 昭和医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>旅行、料理</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「早く一人前になれるように頑張ります。」</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 大学院生 -->
+        <section id="grad" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-teal rounded-full"></span>
+                    大学院生
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 竹内 一隆 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_16b0f934b13843929d2535c854af0952~mv2.jpg/v1/crop/x_680,y_703,w_1759,h_2630/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_7966_JPG.jpg" alt="竹内 一隆 大学院生" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">大学院生、副医局長（広報）</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">竹内　一隆</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、気管食道科学会専門医、がん治療認定医</p>
+                                <p><strong>【学歴】</strong><br>平成26年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>スポーツ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 石田 航太郎 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_aad5cdc3ea784ba497b44dfc26bfbee6~mv2.jpg/v1/crop/x_592,y_837,w_956,h_1430/fill/w_428,h_641,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_E9322_edited.jpg" alt="石田 航太郎 医員、大学院生" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員、大学院生</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">石田　航太郎</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>頭頸部腫瘍</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、日本がん治療認定医、頭頸部がん専門医、アルミノックス治療医、頭頸部ロボット支援手術Certificate</p>
+                                <p><strong>【学歴】</strong><br>平成26年 浜松医科大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>音楽鑑賞、ギター</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 pt-2 border-t border-brand-line/55 bg-brand-paper/50">
+                        <span class="text-[11px] font-bold text-brand-navy block mb-0.5">メッセージ</span>
+                        <p class="text-xs text-brand-muted font-medium italic">「患者さん一人一人にあった治療を心がけます」</p>
+                    </div>
+                </div>
+
+                <!-- 中村 友樹 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_4c69029525f94f6f861cec73c4da31d0~mv2.jpg/v1/crop/x_743,y_0,w_1626,h_2432/fill/w_427,h_639,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8396_JPG.jpg" alt="中村 友樹 医員、大学院生" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-blue block mb-1">医員、大学院生</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">中村　友樹</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医</p>
+                                <p><strong>【学歴】</strong><br>平成26年 福井大学医学部卒</p>
+                                <p><strong>【趣味】</strong><br>ジュビロ磐田、ランニング</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 留学・非常勤 -->
+        <section id="abroad" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-8 reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center gap-3">
+                    <span class="w-1.5 h-6 bg-brand-muted rounded-full"></span>
+                    留学・非常勤
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+                <!-- 山田 智史 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_f7f359bdc49046e8afcc098f9b47db95~mv2.jpg/v1/crop/x_1047,y_0,w_1626,h_2432/fill/w_427,h_639,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8437_JPG.jpg" alt="山田 智史 留学" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">留学（ミシガン大学）</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">山田　智史</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、鼻・副鼻腔疾患</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医、補聴器相談医、騒音性難聴担当医</p>
+                                <p><strong>【学歴】</strong><br>平成26年 浜松医科大学医学部卒 / 令和05年 浜松医科大学医学部大学院卒 医学博士</p>
+                                <p><strong>【趣味】</strong><br>釣り、ドライブ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中西 啓 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_f540234ed9f14900a8bb60350fef17e1~mv2.jpg/v1/crop/x_897,y_0,w_1623,h_2428/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8443_JPG.jpg" alt="中西 啓 非常勤講師" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">非常勤講師 (岩手医科大学主任教授)</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">中西　啓</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、耳科手術、遺伝性難聴</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医・指導医、耳科手術暫定指導医、臨床遺伝専門医、補聴器相談医、めまい相談医、騒音性難聴担当医</p>
+                                <p><strong>【学歴】</strong><br>平成15年 浜松医科大学医学部卒 / 平成22年 浜松医科大学大学院卒 医学博士</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中安 一孝 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_dd42b7f315974cff9a0ef90c181d2f2a~mv2.jpg/v1/crop/x_475,y_0,w_933,h_1396/fill/w_428,h_640,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8470_edited.jpg" alt="中安 一孝 非常勤" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">非常勤</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">中安　一孝</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般、睡眠時無呼吸症候群の診断・治療</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医、日本睡眠学会専門医</p>
+                                <p><strong>【学歴】</strong><br>平成18年 京都府立医科大学医学部卒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 加藤 高行 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_e06a614b2e55411c91f7aa5dd9747cfb~mv2.png/v1/crop/x_144,y_0,w_382,h_571/fill/w_428,h_640,al_c,lg_1,q_85,enc_avif,quality_auto/comig%20soon2.png" alt="加藤 高行 非常勤" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">非常勤</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">加藤　高行</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【専門医・認定医】</strong><br>日本耳鼻咽喉科学会専門医</p>
+                                <p><strong>【学歴】</strong><br>昭和50年 千葉大学医学部卒 / 医学博士</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 松尾 理恵子 -->
+                <div class="codex-card overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="aspect-[3/4] w-full overflow-hidden bg-gray-100 border-b border-brand-line">
+                            <img src="https://static.wixstatic.com/media/2db1a0_e06a614b2e55411c91f7aa5dd9747cfb~mv2.png/v1/crop/x_143,y_0,w_382,h_571/fill/w_428,h_640,al_c,lg_1,q_85,enc_avif,quality_auto/comig%20soon2.png" alt="松尾 理恵子 非常勤" class="object-cover w-full h-full">
+                        </div>
+                        <div class="p-6">
+                            <span class="text-xs font-bold text-brand-muted block mb-1">非常勤</span>
+                            <h3 class="text-xl font-black text-brand-navy mb-4">松尾　理恵子</h3>
+                            <div class="space-y-3 text-xs text-brand-muted leading-relaxed">
+                                <p><strong>【専門領域】</strong><br>耳鼻咽喉科一般</p>
+                                <p><strong>【学歴】</strong><br>平成11年 奈良県立医科大学卒</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="affiliation.html" class="hover:text-brand-blue transition-colors">関連病院</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

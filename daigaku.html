@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大学病院での一日・研修スケジュール | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室の大学病院での臨床研修スケジュールと一日（手術日の金曜日、手術のない月曜日）の流れをご案内します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">大学病院での研修</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="#schedule" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">週間スケジュール</a>
+                <a href="#monday" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">月曜日の流れ</a>
+                <a href="#friday" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">金曜日の流れ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section class="pt-12 pb-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                    <span>Weekly Schedule & Daily Flow</span>
+                    <span class="w-8 h-0.5 bg-brand-teal"></span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl font-black text-brand-navy leading-tight mb-6 reveal">
+                    大学病院での研修・1日の流れ
+                </h1>
+                <p class="text-base sm:text-lg text-brand-muted max-w-3xl mx-auto leading-relaxed reveal" style="transition-delay: 100ms;">
+                    浜松医科大学医学部附属病院での臨床研修スケジュールと、<br class="hidden sm:inline" />
+                    専攻医・研修医の1日の過ごし方をご紹介します。
+                </p>
+            </div>
+        </section>
+
+        <!-- 週間スケジュールセクション -->
+        <section id="schedule" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line reveal">
+            <div class="mb-8 text-center sm:text-left">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center justify-center sm:justify-start gap-3">
+                    <span class="w-1.5 h-6 bg-brand-blue rounded-full"></span>
+                    週間スケジュール
+                </h2>
+                <p class="text-sm text-brand-muted mt-2 pl-0 sm:pl-4">本院における基本的な1週間のスケジュールです。外来、手術、各種カンファレンスがバランスよく配置されています。</p>
+            </div>
+
+            <div class="codex-card p-4 sm:p-6 bg-white flex flex-col items-center">
+                <a href="images/daigaku_schedule.png" target="_blank" class="w-full max-w-4xl overflow-hidden rounded-lg border border-brand-line shadow-inner block hover:opacity-95 transition-opacity cursor-zoom-in" title="クリックして拡大表示">
+                    <img src="images/daigaku_schedule.png" alt="週間スケジュール" class="w-full h-auto" />
+                </a>
+            </div>
+        </section>
+
+        <!-- 手術のない1日の流れ(月曜日) -->
+        <section id="monday" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-10 text-center sm:text-left reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center justify-center sm:justify-start gap-3">
+                    <span class="w-1.5 h-6 bg-brand-teal rounded-full"></span>
+                    手術のない1日の流れ (月曜日)
+                </h2>
+                <p class="text-sm text-brand-muted mt-2 pl-0 sm:pl-4">手術の予定がない日の研修例です。病棟管理、教授回診、および各種カンファレンスが中心となります。</p>
+            </div>
+
+            <div class="space-y-8 max-w-4xl mx-auto reveal">
+                <!-- 病棟診療 -->
+                <div class="codex-card p-6 bg-white flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3 aspect-[4/3] rounded-lg overflow-hidden border border-brand-line">
+                        <img src="images/daigaku_ward.png" alt="病棟診療" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <span class="text-xs font-black text-brand-teal uppercase tracking-wider block mb-1">午前／午後</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">＜病棟診療＞</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium text-gray-700">
+                            指導医の先生と受け持っている患者さんや担当患者さんの診察、処方、治療計画の作成などを行います。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 教授回診 -->
+                <div class="codex-card p-6 bg-white flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3 aspect-[4/3] rounded-lg overflow-hidden border border-brand-line">
+                        <img src="images/daigaku_round.png" alt="教授回診" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <span class="text-xs font-black text-brand-teal uppercase tracking-wider block mb-1">午後</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">＜教授回診＞</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium text-gray-700">
+                            教授から診療におけるアドバイスや教育的な指導を受け、治療方針の確認を行います。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 耳鼻科カンファ -->
+                <div class="codex-card p-6 bg-white flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3 aspect-[4/3] rounded-lg overflow-hidden border border-brand-line">
+                        <img src="images/daigaku_conference.png" alt="耳鼻科カンファレンス" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <span class="text-xs font-black text-brand-teal uppercase tracking-wider block mb-1">夕方</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">＜耳鼻科カンファレンス＞</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium text-gray-700">
+                            入院患者さん、他院からの専門外来への紹介症例、手術症例についてのディスカッションを行います。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 手術日の1日の流れ(金曜日) -->
+        <section id="friday" class="py-12 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="mb-10 text-center sm:text-left reveal">
+                <h2 class="text-2xl font-black text-brand-navy flex items-center justify-center sm:justify-start gap-3">
+                    <span class="w-1.5 h-6 bg-brand-navy rounded-full"></span>
+                    手術日の1日の流れ (金曜日)
+                </h2>
+                <p class="text-sm text-brand-muted mt-2 pl-0 sm:pl-4">手術日における研修例です。朝の抄読会で論文の知見を共有したあと、上級医の指導のもとで手術に入ります。</p>
+            </div>
+
+            <div class="space-y-8 max-w-4xl mx-auto reveal">
+                <!-- 抄読会 -->
+                <div class="codex-card p-6 bg-white flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3 aspect-[4/3] rounded-lg overflow-hidden border border-brand-line">
+                        <img src="images/daigaku_seminar.png" alt="抄読会" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <span class="text-xs font-black text-brand-navy uppercase tracking-wider block mb-1">朝</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">＜抄読会＞</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium text-gray-700">
+                            抄読会では最新の海外・国内論文の知見を読み合わせ、知識のアップデートおよび共有を行います。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 手術 -->
+                <div class="codex-card p-6 bg-white flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/3 aspect-[4/3] rounded-lg overflow-hidden border border-brand-line">
+                        <img src="images/daigaku_surgery.png" alt="手術" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <span class="text-xs font-black text-brand-navy uppercase tracking-wider block mb-1">終日</span>
+                        <h3 class="text-lg font-bold text-brand-navy mb-2">＜手術＞</h3>
+                        <p class="text-sm text-brand-muted leading-relaxed font-medium text-gray-700">
+                            上級医の先生と手術を行います。常に安全に配慮し、上級医の指導を直接受けられる体制となっています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <span>|</span>
+                <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

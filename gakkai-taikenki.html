@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学会参加・体験記 | 浜松医科大学 耳鼻咽喉科・頭頸部外科</title>
+    <meta name="description" content="浜松医科大学医学部耳鼻咽喉科・頭頸部外科学教室が主催した「第70回中部地方連合会」の学会体験記です。学術発表、懇親会での演芸大会、白熱した野球大会など、当科の活気ある2日間の様子をご紹介します。">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#1b6ca8',
+                            teal: '#0f9f9a',
+                            navy: '#102033',
+                            muted: '#5e6f83',
+                            paper: '#f7fbfd',
+                            line: '#d8e2ea',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f7fbfd;
+            color: #102033;
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .codex-card {
+            background: #ffffff;
+            border: 1px solid #d8e2ea;
+            box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
+
+    <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
+    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                    ENT
+                </div>
+                <div class="flex flex-col leading-tight">
+                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <span class="text-xs text-brand-muted font-medium">学会参加・体験記</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-2">
+                <a href="#day1" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">1日目：学術講演・演芸</a>
+                <a href="#day2" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">2日目：野球大会</a>
+                <a href="#summary" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">絆と親睦</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- ヒーローセクション -->
+        <section class="pt-16 pb-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-b from-brand-paper via-white to-brand-paper opacity-70 -z-10"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+                <div class="inline-flex items-center gap-2 text-brand-blue font-extrabold text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-brand-blue"></span>
+                    <span>Conference Experience</span>
+                    <span class="w-8 h-0.5 bg-brand-blue"></span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-black text-brand-navy leading-tight mb-6 reveal">
+                    学会・体験記
+                </h1>
+                <p class="text-lg sm:text-xl font-bold text-brand-teal mb-4 reveal" style="transition-delay: 100ms;">
+                    第70回中部地方連合会 参加記
+                </p>
+                <p class="text-sm sm:text-base text-brand-muted max-w-2xl mx-auto leading-relaxed reveal" style="transition-delay: 200ms;">
+                    皆様は「学会」と聞くと何を思い浮かべますでしょうか？<br />
+                    症例・研究発表やポスター発表、懇親会などを思い描く先生方が多いのではないかと思います。<br />
+                    この夏、浜松医大主催で行われた第70回中部地方連合会は、伝統ある学会でありながら、通常とは一味違った熱い内容で執り行われました。
+                </p>
+            </div>
+        </section>
+
+        <!-- 1日目セクション -->
+        <section id="day1" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-brand-line">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-6 reveal">
+                    <div class="inline-block px-3 py-1 bg-blue-50 text-brand-blue rounded-full text-xs font-black tracking-wider uppercase">
+                        Day 1: Academic & Entertainment
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">
+                        口頭発表・特別講演と大盛況の演芸大会
+                    </h2>
+                    <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                        1日目はアクトシティ浜松の中ホールで一般演題や特別講演などの口頭発表が行われました。質疑応答も盛んに行われ、今後期待される研究や珍しい症例など新たな知見を得ることができました。
+                    </p>
+                    <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                        特別講演では浜松医大ナノスーツ研究部の河崎秀陽先生にご講演いただき、ナノスーツができるまでの経緯や今後の展望などをお話しいただきました。ショウジョウバエの幼虫のコーティングからヒントを得て、できるだけ生きた状態に近い微細構造を電子顕微鏡下で観察できるようにしたという衝撃的な内容で、他大学の先生方からも注目を浴びていました。
+                    </p>
+                    <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                        午後の懇親会では各大学の若手の先生達による出し物の発表会（演芸大会）が行われました。今年は中部地域の13大学が参加し、非常にクオリティの高い出し物が並びました。「チョコレートプラネットのTT兄弟」を模した信州大学が優勝を飾り、当科（浜松医大）はBritain's got talentで再ブレイクした「とにかく明るい安村」をテーマに三澤教授にもご協力いただき、見事準優勝を勝ち取りました。コロナ明け3年ぶりの大会ということもあり、会場は大盛況でした。
+                    </p>
+                </div>
+                <div class="lg:col-span-5 reveal" style="transition-delay: 200ms;">
+                    <div class="codex-card p-4 bg-white shadow-sm">
+                        <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-lg border border-brand-line">
+                            <img src="images/gakkai_engei.jpg" alt="演芸大会の様子" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
+                        </div>
+                        <p class="text-xs text-brand-muted mt-3 font-bold text-center">写真①：演芸大会（とにかく明るい安村）</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2日目セクション -->
+        <section id="day2" class="py-16 bg-white border-y border-brand-line">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-5 order-2 lg:order-1 reveal" style="transition-delay: 200ms;">
+                        <div class="codex-card p-4 bg-white shadow-sm">
+                            <div class="aspect-w-16 aspect-h-12 overflow-hidden rounded-lg border border-brand-line">
+                                <img src="images/gakkai_yakyu.jpg" alt="野球大会の様子" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <p class="text-xs text-brand-muted mt-3 font-bold text-center">写真②：野球大会（白熱したトーナメント戦）</p>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7 order-1 lg:order-2 space-y-6 reveal">
+                        <div class="inline-block px-3 py-1 bg-teal-50 text-brand-teal rounded-full text-xs font-black tracking-wider uppercase">
+                            Day 2: Sports Championship
+                        </div>
+                        <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">
+                            天竜川沿いのグラウンドで駆ける野球大会
+                        </h2>
+                        <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                            2日目は浜松医大と天竜川沿いの野球グラウンドを借り、トーナメント戦で野球大会が行われました。早朝からグラウンド整備やテント設営を行い、晴天で熱中症アラートが出ている中、選手も応援も一丸となって頑張りました。
+                        </p>
+                        <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                            貸し切りバスやキャンピングカーで来場された大学、また試合前のバント練習で高校球児並みに監督の指示が飛び交っている大学など、各校の気合の入りように驚かされました。
+                        </p>
+                        <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium">
+                            今年は信州大学、名古屋市立大学、三重大学が各グラウンドで優勝となり、当科の三澤教授から賞状が授与されました。浜松医大も大健闘しましたが、惜しくも準優勝となりました。手術室や外来診療では見られない先生方の意外な一面や、間近で見ないと分からないような細かな駆け引きなどを見ることができ、野球素人の私でも心から楽しむことができました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- まとめセクション -->
+        <section id="summary" class="py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="space-y-8 reveal">
+                <div class="inline-block px-3 py-1 bg-slate-100 text-brand-navy rounded-full text-xs font-black tracking-wider uppercase">
+                    Summary & Outlook
+                </div>
+                <h2 class="text-2xl sm:text-3xl font-black text-brand-navy">
+                    出し物やスポーツを通じた強い絆
+                </h2>
+                <p class="text-sm sm:text-base text-brand-muted leading-relaxed font-medium max-w-3xl mx-auto">
+                    このように、通常とは一風変わった学会ではありますが、出し物やスポーツを通して医局内の絆がさらに深まり、また他大学の先生方とも非常に有意義な親睦を深めることができました。学術・臨床だけでなく、結束力の固い当教室の活動にご興味のある先生方は、ぜひお気軽にお声がけください！
+                </p>
+
+                <div class="codex-card p-6 bg-white max-w-2xl mx-auto shadow-sm mt-8">
+                    <div class="overflow-hidden rounded-lg border border-brand-line">
+                        <img src="images/gakkai_shugo.jpg" alt="集合写真" class="w-full h-auto object-cover" />
+                    </div>
+                    <p class="text-xs text-brand-muted mt-3 font-bold">写真③：全員揃っての集合写真</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="py-8 bg-white border-t border-brand-line text-center">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
+            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
+                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
+                <span>|</span>
+                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <span>|</span>
+                <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
+                <span>|</span>
+                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                <span>|</span>
+                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                <span>|</span>
+                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                <span>|</span>
+                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                <span>|</span>
+                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                <span>|</span>
+                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- スクロールアニメーション用スクリプト -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
