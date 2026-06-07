@@ -48,6 +48,23 @@
             box-shadow: 0 10px 28px rgba(31, 67, 94, 0.04);
             border-radius: 12px;
         }
+        /* スタッフカード内テキストの文字拡大と行間ゆとり化 */
+        .codex-card .text-xs {
+            font-size: 0.875rem !important; /* 12px -> 14px */
+            line-height: 1.625rem !important; /* ゆったりとした行間 */
+        }
+        .codex-card .text-xl {
+            font-size: 1.5rem !important; /* 20px -> 24px */
+            line-height: 2rem !important;
+        }
+        .codex-card .text-\[11px\] {
+            font-size: 0.75rem !important; /* 11px -> 12px */
+            line-height: 1rem !important;
+        }
+        .codex-card p.text-xs.italic {
+            font-size: 0.875rem !important; /* 12px -> 14px */
+            line-height: 1.5rem !important;
+        }
     </style>
 </head>
 <body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
@@ -103,7 +120,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 三澤 清 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -184,7 +201,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 森田 浩太朗 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -280,7 +297,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 菅原 康介 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -384,7 +401,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 三澤 由幾 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -571,7 +588,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 竹内 一隆 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -644,7 +661,7 @@
                 </h2>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-10 lg:gap-12 reveal">
                 <!-- 山田 智史 -->
                 <div class="codex-card overflow-hidden flex flex-col justify-between">
                     <div>
@@ -758,6 +775,8 @@
                 <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
                 <span>|</span>
                 <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+                <span>|</span>
+                <a href="shukugakai.html" class="hover:text-brand-blue transition-colors">祝賀会のご報告</a>
             </div>
         </div>
     </footer>

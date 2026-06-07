@@ -27,6 +27,8 @@ new-ent-website/
 ├── ryuugakuns-1.html        # 留学体験記（杉山先生）
 ├── ryuugakuss.html          # 留学体験記（佐原先生）
 ├── donation.html            # ご寄付のお願いページ
+├── shukugakai.html          # 祝賀会のご報告ページ（星野名誉教授米寿・峯田名誉教授古希・中西教授就任）
+├── shinobukai.html          # 偲ぶ会と祝賀会のご報告ページ（野末名誉教授偲ぶ会・峯田教授退任・三澤教授就任・瀧澤准教授就任）
 ├── blog.html                # ブログ・活動報告一覧ページ
 ├── blog/                    # 個別ブログ記事HTML配置フォルダ
 ├── images/                  # イラスト・写真アセット配置フォルダ
