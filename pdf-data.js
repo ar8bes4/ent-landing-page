@@ -18,7 +18,7 @@
  */
 
 const PDF_DATA = [
-  // --- 1. 医局紹介・広報関連 ---
+  // --- 1. 医局紹介・広報関連・新聞報道 ---
   {
     title: "専門研修プログラム詳細",
     category: "医局紹介",
@@ -29,9 +29,18 @@ const PDF_DATA = [
     description: "専攻医向け後期専門研修プログラムの全体像、研修スケジュール、各関連病院の特色をまとめた詳細資料です。"
   },
   {
+    title: "新聞報道：声帯の再発性腫瘍 新たな評価法開発",
+    category: "その他",
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_3c43b78a7c4c4793be4599168324b80e.pdf",
+    thumbnail: "",
+    publishDate: "2026-05",
+    author: "静岡新聞",
+    description: "再発性呼吸器乳頭腫症の重症度や経過を予測する新たな評価法を開発し、英医学誌「BMC Medicine」に掲載された山田智史診療助教らの研究について紹介した静岡新聞の報道記事です。"
+  },
+  {
     title: "日耳鼻 教育・育成賞 受賞報告原稿",
     category: "表彰・受賞",
-    pdfUrl: "", // 今後PDFが渡された際にURLを記載してください（例: "pdf/education_award.pdf"）
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_6194a0548b3c4283bffaad3c1c3efc53.pdf",
     thumbnail: "",
     publishDate: "2025-05",
     author: "耳鼻咽喉科・頭頸部外科教室",
@@ -40,7 +49,7 @@ const PDF_DATA = [
   {
     title: "はんだ山の風 2025",
     category: "広報誌",
-    pdfUrl: "", // 今後PDFのURLを記載してください
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_af3821d87ad04550b456fe57d2b78ee5.pdf",
     thumbnail: "",
     publishDate: "2025-02",
     author: "静岡医科大学附属病院",
@@ -49,7 +58,7 @@ const PDF_DATA = [
   {
     title: "はんだ山の風 2024",
     category: "広報誌",
-    pdfUrl: "", // 今後PDFのURLを記載してください
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_14d8c4d597e14efb963378df0cb10908.pdf",
     thumbnail: "",
     publishDate: "2024-08",
     author: "静岡医科大学附属病院",
@@ -58,7 +67,7 @@ const PDF_DATA = [
   {
     title: "日耳鼻 新任教授のご挨拶",
     category: "医局紹介",
-    pdfUrl: "", // 今後PDFのURLを記載してください
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_0fb3f86a32a54aaeb150242c7bfb731e.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "三澤 清 教授",
@@ -67,7 +76,7 @@ const PDF_DATA = [
   {
     title: "美蓄 New Wave 2024",
     category: "学会雑誌",
-    pdfUrl: "", // 今後PDFのURLを記載してください
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_cd4f16c1286d45bbb5ba443d1aaa14c5.pdf",
     thumbnail: "",
     publishDate: "2024-03",
     author: "免アレ感染学会誌",
@@ -76,11 +85,29 @@ const PDF_DATA = [
   {
     title: "附属病院リーフレット",
     category: "広報誌",
-    pdfUrl: "", // 今後PDFのURLを記載してください
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c6c5773239194bcbab64ee4e3c2f98c5.pdf",
     thumbnail: "",
     publishDate: "2024-01",
     author: "静岡医科大学附属病院",
     description: "外来受診や紹介状のご案内など、当科の受診を検討される患者さん・ご家族向け紹介リーフレットです。"
+  },
+  {
+    title: "新聞報道：頭頸部がん 県内初 新治療開始",
+    category: "その他",
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c60ea29640484143a7d9c757deddad88.pdf",
+    thumbnail: "",
+    publishDate: "2022-05",
+    author: "静岡新聞",
+    description: "体に負担が少なくがん細胞を光で破壊する「頭頸部アルミノックス治療（光免疫療法）」を静岡県内で初めて開始したことを紹介した静岡新聞の報道記事です。"
+  },
+  {
+    title: "新聞報道：増加する中咽頭がん 重症化のケース解明",
+    category: "その他",
+    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_9e7e209855674a11833f9f06e57a11d0.pdf",
+    thumbnail: "",
+    publishDate: "2020-01",
+    author: "静岡新聞",
+    description: "中咽頭がんの重症化に関わる遺伝子の異常を解明し、治療の個別化や創薬につながる成果として報道された静岡新聞の報道記事です。"
   },
 
   // --- 2. 関連病院紹介PDF (affiliation.htmlから抽出) ---
