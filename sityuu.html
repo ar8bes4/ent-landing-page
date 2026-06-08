@@ -75,7 +75,7 @@
                     <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
                     <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
                     <a href="recruit.html" class="hover:text-brand-blue transition-colors">採用情報</a>
-                    <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                    <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ</a>
                     
                     <!-- Content Dropdown -->
                     <div class="relative group">
@@ -99,30 +99,6 @@
                         </div>
                     </div>
 
-                    <!-- External Site Dropdown -->
-                    <div class="relative group">
-                        <button class="flex items-center gap-1 hover:text-brand-blue transition-colors py-2 focus:outline-none">
-                            <span>外部サイト</span>
-                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <!-- Dropdown Menu -->
-                        <div class="absolute right-0 mt-0 w-60 bg-white border border-brand-line rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
-                            <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">
-                                <span>浜松医科大学HP</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <a href="http://www.shizuoka-jibika.jp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">
-                                <span>静岡県地方部会</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <a href="https://www.hmsol.co.jp/products/index/6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-teal hover:bg-brand-paper hover:text-brand-blue transition-colors">
-                                <span>H型耳垢鉗子 (浜松医大式)</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                        </div>
-                    </div>
                 </nav>
 
                 <!-- Mobile Menu Button -->
@@ -144,7 +120,7 @@
                 <a href="staff.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">スタッフ紹介</a>
                 <a href="student-clerkship.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">学生病院実習</a>
                 <a href="recruit.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">採用情報</a>
-                <a href="blog.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                <a href="blog.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">ブログ</a>
                 
                 <!-- Mobile Content Accordion -->
                 <div class="space-y-1">
@@ -166,29 +142,6 @@
                     </div>
                 </div>
 
-                <!-- Mobile External Links Accordion -->
-                <div class="space-y-1">
-                    <button class="flex items-center justify-between w-full py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors focus:outline-none" onclick="toggleMobileSubmenu('mobile-submenu-external', this)">
-                        <span>外部サイト</span>
-                        <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
-                    </button>
-                    <div id="mobile-submenu-external" class="hidden pl-4 pr-2 py-1 space-y-2 bg-brand-paper/50 rounded-lg">
-                        <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">
-                            <span>浜松医科大学HP</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                        <a href="http://www.shizuoka-jibika.jp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">
-                            <span>静岡県地方部会</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                        <a href="https://www.hmsol.co.jp/products/index/6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-teal hover:text-brand-blue transition-colors">
-                            <span>H型耳垢鉗子 (浜松医大式)</span>
-                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -365,7 +318,7 @@
             <!-- Footer -->
     <footer class="py-12 bg-white border-t border-brand-line mt-12">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-8 border-b border-brand-line/60">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 mb-10 pb-8 border-b border-brand-line/60">
                 <!-- Col 1: Brand Info -->
                 <div class="space-y-4">
                     <span class="font-bold text-brand-navy text-base">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
@@ -392,13 +345,19 @@
                         <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
                     </div>
                 </div>
-                <!-- Col 4: Activity & External Links -->
+                <!-- Col 4: Activity -->
                 <div class="space-y-3">
-                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">活動報告 &amp; 外部サイト</h4>
+                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">活動報告</h4>
                     <div class="flex flex-col gap-2 text-xs font-bold text-brand-muted">
-                        <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                        <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ</a>
                         <a href="pdf-library.html" class="hover:text-brand-blue transition-colors">PDF資料室</a>
                         <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                    </div>
+                </div>
+                <!-- Col 5: External Links -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">外部サイト</h4>
+                    <div class="flex flex-col gap-2 text-xs font-bold text-brand-muted">
                         <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="hover:text-brand-blue flex items-center gap-1 transition-colors">
                             <span>浜松医科大学HP</span>
                             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
