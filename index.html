@@ -74,6 +74,7 @@
                     <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
                     <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
                     <a href="recruit.html" class="hover:text-brand-blue transition-colors">採用情報</a>
+                    <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ・活動報告</a>
                     
                     <!-- Content Dropdown -->
                     <div class="relative group">
@@ -86,7 +87,6 @@
                         <!-- Dropdown Menu -->
                         <div class="absolute left-0 mt-0 w-64 bg-white border border-brand-line rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
                             <a href="pdf-library.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">PDF資料室</a>
-                            <a href="blog.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">ブログ・活動報告</a>
                             <a href="gakkai-taikenki.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">学会体験記</a>
                             <a href="daigaku.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">専攻医の一日：大学病院</a>
                             <a href="sityuu.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">専攻医の一日：市中病院</a>
@@ -143,6 +143,7 @@
                 <a href="staff.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">スタッフ紹介</a>
                 <a href="student-clerkship.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">学生病院実習</a>
                 <a href="recruit.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">採用情報</a>
+                <a href="blog.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">ブログ・活動報告</a>
                 
                 <!-- Mobile Content Accordion -->
                 <div class="space-y-1">
@@ -154,7 +155,6 @@
                     </button>
                     <div id="mobile-submenu-content" class="hidden pl-4 pr-2 py-1 space-y-2 bg-brand-paper/50 rounded-lg">
                         <a href="pdf-library.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">PDF資料室</a>
-                        <a href="blog.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">ブログ・活動報告</a>
                         <a href="gakkai-taikenki.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">学会体験記</a>
                         <a href="daigaku.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">専攻医の一日：大学病院</a>
                         <a href="sityuu.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">専攻医の一日：市中病院</a>
@@ -193,30 +193,40 @@
     </header>
 
     <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="relative pt-24 pb-20 overflow-hidden bg-[url('images/group_photo_2026.png')] bg-cover bg-center">
-            <!-- Overlay for contrast -->
-            <div class="absolute inset-0 bg-brand-navy/70 -z-10"></div>
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+        <!-- Hero Section (Clean & Gradient Background) -->
+        <section class="relative pt-16 pb-12 overflow-hidden bg-gradient-to-b from-blue-50/30 via-brand-paper to-transparent">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="inline-flex items-center gap-2 text-brand-teal font-extrabold text-sm mb-4">
                     <span class="w-8 h-0.5 bg-brand-teal"></span>
                     <span class="text-brand-teal">Official Portal</span>
                     <span class="w-8 h-0.5 bg-brand-teal"></span>
                 </div>
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mb-6 reveal">
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-brand-navy mb-6 reveal">
                     浜松医科大学<br class="sm:hidden" /> 耳鼻咽喉科・頭頸部外科
                 </h1>
-                <p class="text-base sm:text-lg text-white/95 max-w-2xl mx-auto leading-relaxed mb-4 reveal font-semibold" style="transition-delay: 100ms;">
+                <p class="text-base sm:text-lg text-brand-navy/90 max-w-2xl mx-auto leading-relaxed mb-4 reveal font-semibold" style="transition-delay: 100ms;">
                     頭頚部外科・耳科・鼻科ともに先端医療を目指し、日々診療をおこなっています。
                 </p>
-                <p class="text-xs sm:text-sm text-white/70 max-w-xl mx-auto leading-relaxed reveal" style="transition-delay: 200ms;">
+                <p class="text-xs sm:text-sm text-brand-muted max-w-xl mx-auto leading-relaxed reveal mb-10" style="transition-delay: 200ms;">
                     静岡県の耳鼻咽喉科診療の基盤を担う教室の歩み、および特色ある学生向け臨床実習情報、専攻医プログラム情報へご案内します。
                 </p>
+
+                <!-- 集合写真（独立したカードレイアウト） -->
+                <div class="reveal max-w-5xl mx-auto mb-12" style="transition-delay: 250ms;">
+                    <div class="relative bg-white p-3 rounded-2xl shadow-[0_20px_50px_rgba(27,108,168,0.08)] border border-brand-line">
+                        <div class="relative rounded-xl overflow-hidden bg-gray-50 shadow-inner">
+                            <img src="images/group_photo_2026.png" alt="教室集合写真" class="w-full h-auto object-cover">
+                        </div>
+                        <div class="mt-3 text-center text-xs sm:text-sm text-brand-muted font-medium">
+                            浜松医科大学耳鼻咽喉科・頭頸部外科学教室
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- 重要なお知らせ (募集・説明会情報) -->
-        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 mb-8 reveal relative z-10">
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 reveal relative z-10">
             <div class="bg-white border border-brand-line/80 rounded-2xl p-6 md:p-8 shadow-[0_15px_30px_rgba(16,32,51,0.05)]">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                     <!-- Left: Text Info -->
