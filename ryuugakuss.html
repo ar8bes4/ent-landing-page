@@ -71,23 +71,143 @@
 <body class="antialiased selection:bg-brand-blue selection:text-white flex flex-col min-h-screen">
 
     <!-- ヘッダー（モバイル非表示、PC表示の一貫構成） -->
-    <header class="hidden md:block sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-brand-line">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-3 group">
-                <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
-                    ENT
+        <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-line">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <div class="w-9 h-9 rounded bg-gradient-to-br from-brand-blue to-brand-teal text-white flex items-center justify-center font-black text-sm shadow-md">
+                        ENT
+                    </div>
+                    <div class="flex flex-col leading-tight">
+                        <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                        <span class="text-xs text-brand-muted font-medium">オフィシャルポータル</span>
+                    </div>
+                </a>
+
+                <!-- PC Nav Links -->
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-bold text-brand-navy">
+                    <a href="index.html" class="hover:text-brand-blue transition-colors">ホーム</a>
+                    <a href="introduction.html" class="hover:text-brand-blue transition-colors">教室紹介</a>
+                    <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                    <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
+                    <a href="recruit.html" class="hover:text-brand-blue transition-colors">採用情報</a>
+                    
+                    <!-- Content Dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 hover:text-brand-blue transition-colors py-2 focus:outline-none">
+                            <span>コンテンツ</span>
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute left-0 mt-0 w-64 bg-white border border-brand-line rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                            <a href="pdf-library.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">PDF資料室</a>
+                            <a href="blog.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                            <a href="gakkai-taikenki.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">学会体験記</a>
+                            <a href="daigaku.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">専攻医の一日：大学病院</a>
+                            <a href="sityuu.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">専攻医の一日：市中病院</a>
+                            <a href="ryuugakuns-1.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">留学体験記：杉山先生</a>
+                            <a href="ryuugakuss.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">留学体験記：佐原先生</a>
+                            <div class="border-t border-brand-line/60 my-1"></div>
+                            <a href="shinobukai.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">R5.10.27 偲ぶ会と祝賀会のご報告</a>
+                            <a href="shukugakai.html" class="block px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">R7.11.29 祝賀会のご報告</a>
+                        </div>
+                    </div>
+
+                    <!-- External Site Dropdown -->
+                    <div class="relative group">
+                        <button class="flex items-center gap-1 hover:text-brand-blue transition-colors py-2 focus:outline-none">
+                            <span>外部サイト</span>
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute right-0 mt-0 w-60 bg-white border border-brand-line rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 py-2 z-50">
+                            <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">
+                                <span>浜松医科大学HP</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="http://www.shizuoka-jibika.jp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-navy hover:bg-brand-paper hover:text-brand-blue transition-colors">
+                                <span>静岡県地方部会</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                            <a href="https://www.hmsol.co.jp/products/index/6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-2 text-xs font-bold text-brand-teal hover:bg-brand-paper hover:text-brand-blue transition-colors">
+                                <span>H型耳垢鉗子 (浜松医大式)</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden flex items-center">
+                    <button id="btn-mobile-menu" class="text-brand-navy hover:text-brand-blue focus:outline-none p-2" aria-label="メニュー開閉">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="mobile-menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
                 </div>
-                <div class="flex flex-col leading-tight">
-                    <span class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
-                    <span class="text-xs text-brand-muted font-medium">留学体験記</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-brand-line bg-white/98 backdrop-blur-md">
+            <div class="px-4 pt-2 pb-6 space-y-3 text-sm font-bold text-brand-navy">
+                <a href="index.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">ホーム</a>
+                <a href="introduction.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">教室紹介</a>
+                <a href="staff.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                <a href="student-clerkship.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">学生病院実習</a>
+                <a href="recruit.html" class="block py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors">採用情報</a>
+                
+                <!-- Mobile Content Accordion -->
+                <div class="space-y-1">
+                    <button class="flex items-center justify-between w-full py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors focus:outline-none" onclick="toggleMobileSubmenu('mobile-submenu-content', this)">
+                        <span>コンテンツ</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-submenu-content" class="hidden pl-4 pr-2 py-1 space-y-2 bg-brand-paper/50 rounded-lg">
+                        <a href="pdf-library.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">PDF資料室</a>
+                        <a href="blog.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                        <a href="gakkai-taikenki.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">学会体験記</a>
+                        <a href="daigaku.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">専攻医の一日：大学病院</a>
+                        <a href="sityuu.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">専攻医の一日：市中病院</a>
+                        <a href="ryuugakuns-1.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">留学体験記：杉山先生</a>
+                        <a href="ryuugakuss.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">留学体験記：佐原先生</a>
+                        <a href="shinobukai.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">R5.10.27 偲ぶ会と祝賀会のご報告</a>
+                        <a href="shukugakai.html" class="block py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">R7.11.29 祝賀会のご報告</a>
+                    </div>
                 </div>
-            </a>
-            <nav class="hidden md:flex items-center gap-2">
-                <a href="index.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">ホーム</a>
-                <a href="staff.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">スタッフ紹介</a>
-                <a href="student-clerkship.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">学生実習のご案内</a>
-                <a href="recruit.html" class="px-3 py-2 text-sm font-bold text-brand-muted hover:text-brand-blue hover:bg-[#eef7fb] rounded-lg transition-colors">採用・専門研修</a>
-            </nav>
+
+                <!-- Mobile External Links Accordion -->
+                <div class="space-y-1">
+                    <button class="flex items-center justify-between w-full py-2 border-b border-brand-line/40 hover:text-brand-blue transition-colors focus:outline-none" onclick="toggleMobileSubmenu('mobile-submenu-external', this)">
+                        <span>外部サイト</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-submenu-external" class="hidden pl-4 pr-2 py-1 space-y-2 bg-brand-paper/50 rounded-lg">
+                        <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">
+                            <span>浜松医科大学HP</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                        <a href="http://www.shizuoka-jibika.jp/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-navy hover:text-brand-blue transition-colors">
+                            <span>静岡県地方部会</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                        <a href="https://www.hmsol.co.jp/products/index/6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between py-1.5 text-xs text-brand-teal hover:text-brand-blue transition-colors">
+                            <span>H型耳垢鉗子 (浜松医大式)</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -272,31 +392,68 @@
     </div>
 
     <!-- フッター -->
-    <footer class="py-8 bg-white border-t border-brand-line text-center">
-        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-brand-muted text-xs sm:text-sm font-medium">&copy; 浜松医科大学 耳鼻咽喉科・頭頸部外科</p>
-            <div class="flex items-center gap-4 text-xs font-bold text-brand-muted flex-wrap justify-center">
-                <a href="index.html" class="hover:text-brand-blue transition-colors">ホームへ戻る</a>
-                <span>|</span>
-                <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
-                <span>|</span>
-                <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習</a>
-                <span>|</span>
-                <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
-                <span>|</span>
-                <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
-                <span>|</span>
-                <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
-                <span>|</span>
-                <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
-                <span>|</span>
-                <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
-                <span>|</span>
-                <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
-                <span>|</span>
-                <a href="pdf-library.html" class="hover:text-brand-blue transition-colors">PDF資料室</a>
-                <span>|</span>
-                <a href="shukugakai.html" class="hover:text-brand-blue transition-colors">祝賀会のご報告</a>
+            <!-- Footer -->
+    <footer class="py-12 bg-white border-t border-brand-line mt-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 pb-8 border-b border-brand-line/60">
+                <!-- Col 1: Brand Info -->
+                <div class="space-y-4">
+                    <span class="font-bold text-brand-navy text-base">浜松医科大学 耳鼻咽喉科・頭頸部外科</span>
+                    <p class="text-xs text-brand-muted leading-relaxed font-medium">
+                        静岡県の耳鼻咽喉科・頭頸部外科医療の基盤として、先端的な診療と研究、そして未来を担う若手医師の育成に全力を注いでいます。
+                    </p>
+                </div>
+                <!-- Col 2: About & Careers -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">医局紹介 &amp; 採用</h4>
+                    <div class="flex flex-col gap-2 text-xs font-bold text-brand-muted">
+                        <a href="introduction.html" class="hover:text-brand-blue transition-colors">教室紹介・教授挨拶</a>
+                        <a href="staff.html" class="hover:text-brand-blue transition-colors">スタッフ紹介</a>
+                        <a href="recruit.html" class="hover:text-brand-blue transition-colors">採用情報・専門研修</a>
+                        <a href="donation.html" class="hover:text-brand-blue transition-colors">ご寄付のお願い</a>
+                    </div>
+                </div>
+                <!-- Col 3: Education & Clerkship -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">研修・実習案内</h4>
+                    <div class="flex flex-col gap-2 text-xs font-bold text-brand-muted">
+                        <a href="student-clerkship.html" class="hover:text-brand-blue transition-colors">学生病院実習のご案内</a>
+                        <a href="daigaku.html" class="hover:text-brand-blue transition-colors">大学病院での研修</a>
+                        <a href="sityuu.html" class="hover:text-brand-blue transition-colors">市中病院での研修</a>
+                    </div>
+                </div>
+                <!-- Col 4: Activity & External Links -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-black text-brand-teal uppercase tracking-wider">活動報告 &amp; 外部サイト</h4>
+                    <div class="flex flex-col gap-2 text-xs font-bold text-brand-muted">
+                        <a href="blog.html" class="hover:text-brand-blue transition-colors">ブログ・活動報告</a>
+                        <a href="pdf-library.html" class="hover:text-brand-blue transition-colors">PDF資料室</a>
+                        <a href="gakkai-taikenki.html" class="hover:text-brand-blue transition-colors">学会体験記</a>
+                        <a href="http://www.hama-med.ac.jp/index.html" target="_blank" rel="noopener noreferrer" class="hover:text-brand-blue flex items-center gap-1 transition-colors">
+                            <span>浜松医科大学HP</span>
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                        <a href="http://www.shizuoka-jibika.jp/" target="_blank" rel="noopener noreferrer" class="hover:text-brand-blue flex items-center gap-1 transition-colors">
+                            <span>静岡県地方部会</span>
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                        <a href="https://www.hmsol.co.jp/products/index/6" target="_blank" rel="noopener noreferrer" class="hover:text-brand-teal flex items-center gap-1 transition-colors font-extrabold">
+                            <span>H型耳垢鉗子 (浜松医大式)</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-bold text-brand-muted/80">
+                <div class="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-2">
+                    <a href="index.html" class="hover:text-brand-blue transition-colors">ホーム</a>
+                    <a href="ryuugakuns-1.html" class="hover:text-brand-blue transition-colors">留学体験記（杉山先生）</a>
+                    <a href="ryuugakuss.html" class="hover:text-brand-blue transition-colors">留学体験記（佐原先生）</a>
+                    <a href="shukugakai.html" class="hover:text-brand-blue transition-colors">祝賀会のご報告</a>
+                    <a href="shinobukai.html" class="hover:text-brand-blue transition-colors">偲ぶ会と祝賀会のご報告</a>
+                </div>
+                <p class="text-brand-muted text-[10px] font-medium">&copy; 2026 浜松医科大学 耳鼻咽喉科・頭頸部外科 All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -347,6 +504,42 @@
                 closeLightbox();
             }
         });
+    </script>
+    <!-- Mobile Menu Control Script -->
+    <script>
+        // --- Mobile Menu Toggle ---
+        const btnMobileMenu = document.getElementById('btn-mobile-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuIcon = document.getElementById('mobile-menu-icon');
+
+        if (btnMobileMenu && mobileMenu) {
+            btnMobileMenu.addEventListener('click', () => {
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                if (isOpen) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuIcon.setAttribute('d', 'M4 6h16M4 12h16M4 18h16');
+                } else {
+                    mobileMenu.classList.remove('hidden');
+                    mobileMenuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12');
+                }
+            });
+        }
+
+        // --- Mobile Submenu Toggle ---
+        function toggleMobileSubmenu(submenuId, buttonEl) {
+            const submenu = document.getElementById(submenuId);
+            if (submenu) {
+                const isHidden = submenu.classList.contains('hidden');
+                const svg = buttonEl.querySelector('svg');
+                if (isHidden) {
+                    submenu.classList.remove('hidden');
+                    if (svg) svg.classList.add('rotate-180');
+                } else {
+                    submenu.classList.add('hidden');
+                    if (svg) svg.classList.remove('rotate-180');
+                }
+            }
+        }
     </script>
 </body>
 </html>
