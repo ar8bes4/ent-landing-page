@@ -22,7 +22,7 @@ const PDF_DATA = [
   {
     title: "専門研修プログラム詳細",
     category: "医局紹介",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_2f7f80ad6e40403e9b87323a4e90ab9b.pdf",
+    pdfUrl: "pdfs/2db1a0_2f7f80ad6e40403e9b87323a4e90ab9b.pdf",
     thumbnail: "",
     publishDate: "2026-05",
     author: "浜松医科大学 耳鼻咽喉科・頭頸部外科",
@@ -31,7 +31,7 @@ const PDF_DATA = [
   {
     title: "新聞報道：声帯の再発性腫瘍 新たな評価法開発",
     category: "その他",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_3c43b78a7c4c4793be4599168324b80e.pdf",
+    pdfUrl: "pdfs/2db1a0_3c43b78a7c4c4793be4599168324b80e.pdf",
     thumbnail: "",
     publishDate: "2026-05",
     author: "静岡新聞",
@@ -40,7 +40,7 @@ const PDF_DATA = [
   {
     title: "日耳鼻 教育・育成賞 受賞報告原稿",
     category: "表彰・受賞",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_6194a0548b3c4283bffaad3c1c3efc53.pdf",
+    pdfUrl: "pdfs/2db1a0_6194a0548b3c4283bffaad3c1c3efc53.pdf",
     thumbnail: "",
     publishDate: "2025-05",
     author: "耳鼻咽喉科・頭頸部外科教室",
@@ -49,7 +49,7 @@ const PDF_DATA = [
   {
     title: "はんだ山の風 2025",
     category: "広報誌",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_af3821d87ad04550b456fe57d2b78ee5.pdf",
+    pdfUrl: "pdfs/2db1a0_af3821d87ad04550b456fe57d2b78ee5.pdf",
     thumbnail: "",
     publishDate: "2025-02",
     author: "静岡医科大学附属病院",
@@ -58,7 +58,7 @@ const PDF_DATA = [
   {
     title: "はんだ山の風 2024",
     category: "広報誌",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_14d8c4d597e14efb963378df0cb10908.pdf",
+    pdfUrl: "pdfs/2db1a0_14d8c4d597e14efb963378df0cb10908.pdf",
     thumbnail: "",
     publishDate: "2024-08",
     author: "静岡医科大学附属病院",
@@ -67,7 +67,7 @@ const PDF_DATA = [
   {
     title: "日耳鼻 新任教授のご挨拶",
     category: "医局紹介",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_0fb3f86a32a54aaeb150242c7bfb731e.pdf",
+    pdfUrl: "pdfs/2db1a0_0fb3f86a32a54aaeb150242c7bfb731e.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "三澤 清 教授",
@@ -76,7 +76,7 @@ const PDF_DATA = [
   {
     title: "美蓄 New Wave 2024",
     category: "学会雑誌",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_cd4f16c1286d45bbb5ba443d1aaa14c5.pdf",
+    pdfUrl: "pdfs/2db1a0_cd4f16c1286d45bbb5ba443d1aaa14c5.pdf",
     thumbnail: "",
     publishDate: "2024-03",
     author: "免アレ感染学会誌",
@@ -85,7 +85,7 @@ const PDF_DATA = [
   {
     title: "附属病院リーフレット",
     category: "広報誌",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c6c5773239194bcbab64ee4e3c2f98c5.pdf",
+    pdfUrl: "pdfs/2db1a0_c6c5773239194bcbab64ee4e3c2f98c5.pdf",
     thumbnail: "",
     publishDate: "2024-01",
     author: "静岡医科大学附属病院",
@@ -94,7 +94,7 @@ const PDF_DATA = [
   {
     title: "新聞報道：頭頸部がん 県内初 新治療開始",
     category: "その他",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c60ea29640484143a7d9c757deddad88.pdf",
+    pdfUrl: "pdfs/2db1a0_c60ea29640484143a7d9c757deddad88.pdf",
     thumbnail: "",
     publishDate: "2022-05",
     author: "静岡新聞",
@@ -103,7 +103,7 @@ const PDF_DATA = [
   {
     title: "新聞報道：増加する中咽頭がん 重症化のケース解明",
     category: "その他",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_9e7e209855674a11833f9f06e57a11d0.pdf",
+    pdfUrl: "pdfs/2db1a0_9e7e209855674a11833f9f06e57a11d0.pdf",
     thumbnail: "",
     publishDate: "2020-01",
     author: "静岡新聞",
@@ -114,7 +114,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：沼津市立病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_be7420c2969a475daa400a5e72f7cb07.pdf",
+    pdfUrl: "pdfs/2db1a0_be7420c2969a475daa400a5e72f7cb07.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "沼津市立病院 耳鼻咽喉科",
@@ -123,7 +123,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：富士宮市立病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_47a6b3e21b364d7daf5e2718f04d2492.pdf",
+    pdfUrl: "pdfs/2db1a0_47a6b3e21b364d7daf5e2718f04d2492.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "富士宮市立病院 耳鼻咽喉科",
@@ -132,7 +132,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：静岡済生会総合病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_453b1d709fec41cca6e9e90b294b424c.pdf",
+    pdfUrl: "pdfs/2db1a0_453b1d709fec41cca6e9e90b294b424c.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "静岡済生会総合病院 耳鼻咽喉科",
@@ -141,7 +141,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：焼津市立総合病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_832a7c647f0f4c268ee35a3830bc2c4a.pdf",
+    pdfUrl: "pdfs/2db1a0_832a7c647f0f4c268ee35a3830bc2c4a.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "焼津市立総合病院 耳鼻咽喉科",
@@ -150,7 +150,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：藤枝市立総合病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_526700986dae437fa8828d11341cc5ed.pdf",
+    pdfUrl: "pdfs/2db1a0_526700986dae437fa8828d11341cc5ed.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "藤枝市立総合病院 耳鼻咽喉科",
@@ -159,7 +159,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：清水厚生病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_c2d2c143473846deae5b9cee7b724bb2.pdf",
+    pdfUrl: "pdfs/2db1a0_c2d2c143473846deae5b9cee7b724bb2.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "清水厚生病院 耳鼻咽喉科",
@@ -168,7 +168,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：静岡厚生病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_127d81b4695f4e35ba5328f877f79398.pdf",
+    pdfUrl: "pdfs/2db1a0_127d81b4695f4e35ba5328f877f79398.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "静岡厚生病院 耳鼻咽喉科",
@@ -177,7 +177,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：静岡県立こども病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_49980f0b42694f508c923646ef6e33a0.pdf",
+    pdfUrl: "pdfs/2db1a0_49980f0b42694f508c923646ef6e33a0.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "静岡県立こども病院 耳鼻咽喉科",
@@ -186,7 +186,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：総合病院聖隷浜松病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_2897c3ad81674f5a8ad3adbe92d8bddb.pdf",
+    pdfUrl: "pdfs/2db1a0_2897c3ad81674f5a8ad3adbe92d8bddb.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "聖隷浜松病院 耳鼻咽喉科・頭頸部外科",
@@ -195,7 +195,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：浜松医療センター",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_b439390d5fcd47fe999666dfb5338707.pdf",
+    pdfUrl: "pdfs/2db1a0_b439390d5fcd47fe999666dfb5338707.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "浜松医療センター 耳鼻咽喉科",
@@ -204,7 +204,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：総合病院聖隷三方原病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_011efd42ba824eb4a120d3d87af8ec39.pdf",
+    pdfUrl: "pdfs/2db1a0_011efd42ba824eb4a120d3d87af8ec39.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "聖隷三方原病院 耳鼻咽喉科",
@@ -213,7 +213,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：遠州病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_ab389677d1b84c1e812880891c43d6cc.pdf",
+    pdfUrl: "pdfs/2db1a0_ab389677d1b84c1e812880891c43d6cc.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "静岡県厚生連 遠州病院 耳鼻咽喉科",
@@ -222,7 +222,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：中東遠総合医療センター",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_9df876d627824ddd925b4926bdde63f6.pdf",
+    pdfUrl: "pdfs/2db1a0_9df876d627824ddd925b4926bdde63f6.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "中東遠総合医療センター 耳鼻咽喉科",
@@ -231,7 +231,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：磐田市立総合病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_deb5c6ad8fac47e0be8f249b8c486401.pdf",
+    pdfUrl: "pdfs/2db1a0_deb5c6ad8fac47e0be8f249b8c486401.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "磐田市立総合病院 耳鼻咽喉科",
@@ -240,7 +240,7 @@ const PDF_DATA = [
   {
     title: "関連病院紹介：青山総合病院",
     category: "関連病院",
-    pdfUrl: "https://25c240e4-6a91-46c1-9b35-a719bf4831fc.filesusr.com/ugd/2db1a0_e53da27a8127482e921170539b086049.pdf",
+    pdfUrl: "pdfs/2db1a0_e53da27a8127482e921170539b086049.pdf",
     thumbnail: "",
     publishDate: "2024-04",
     author: "青山総合病院 耳鼻咽喉科",
