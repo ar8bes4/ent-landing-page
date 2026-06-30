@@ -20,6 +20,15 @@
 const PDF_DATA = [
   // --- 1. 医局紹介・広報関連・新聞報道 ---
   {
+    title: "学会誌寄稿：教室紹介（研究室だより）",
+    category: "学会雑誌",
+    pdfUrl: "pdfs/202606_jiaio_misawa.pdf",
+    thumbnail: "",
+    publishDate: "2026-06",
+    author: "三澤 清 教授",
+    description: "日本耳鼻咽喉科免疫アレルギー感染症学会誌（2026年6月号）に掲載された、当科の教室紹介（研究室だより）記事です。講座の歴史、診療・研究体制について紹介しています。"
+  },
+  {
     title: "専門研修プログラム詳細",
     category: "医局紹介",
     pdfUrl: "pdfs/2db1a0_2f7f80ad6e40403e9b87323a4e90ab9b.pdf",
@@ -52,7 +61,7 @@ const PDF_DATA = [
     pdfUrl: "pdfs/2db1a0_af3821d87ad04550b456fe57d2b78ee5.pdf",
     thumbnail: "",
     publishDate: "2025-02",
-    author: "静岡医科大学附属病院",
+    author: "浜松医科大学附属病院",
     description: "附属病院の広報誌「はんだ山の風」2025年版に掲載された、当科の活動および診療体制の紹介ページです。"
   },
   {
@@ -61,7 +70,7 @@ const PDF_DATA = [
     pdfUrl: "pdfs/2db1a0_14d8c4d597e14efb963378df0cb10908.pdf",
     thumbnail: "",
     publishDate: "2024-08",
-    author: "静岡医科大学附属病院",
+    author: "浜松医科大学附属病院",
     description: "附属病院の広報誌「はんだ山の風」2024年版に掲載された、当科の紹介記事です。"
   },
   {
@@ -88,7 +97,7 @@ const PDF_DATA = [
     pdfUrl: "pdfs/2db1a0_c6c5773239194bcbab64ee4e3c2f98c5.pdf",
     thumbnail: "",
     publishDate: "2024-01",
-    author: "静岡医科大学附属病院",
+    author: "浜松医科大学附属病院",
     description: "外来受診や紹介状のご案内など、当科の受診を検討される患者さん・ご家族向け紹介リーフレットです。"
   },
   {
