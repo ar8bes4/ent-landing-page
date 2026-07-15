@@ -356,57 +356,101 @@
                     <h2 class="text-2xl md:text-3xl font-black text-brand-navy mb-4">
                         浜松医大耳鼻科が作成した<br class="md:hidden"/>学生用の手術予習動画コーナー
                     </h2>
+                    <p class="text-xs md:text-sm text-brand-muted max-w-2xl mx-auto mb-6 leading-relaxed">
+                        ※リンク先はShizuoka Medical Seedsという会員限定サイトです。閲覧に際してユーザーアカウントとパスワードによる認証が必要になります。
+                    </p>
                     <div class="w-16 h-1 bg-brand-line mx-auto rounded-full"></div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <!-- Video 1 -->
-                    <div class="codex-card block overflow-hidden reveal opacity-75 cursor-default">
-                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line">
-                            <img src="https://placehold.co/600x338/f0f4f8/1b6ca8?text=Video+Thumbnail" alt="鼓室形成術動画" class="object-cover w-full h-full opacity-60">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span class="px-3 py-1.5 bg-gray-900/60 text-white rounded text-xs font-bold tracking-wider">準備中</span>
+                    <a href="https://v.classtream.jp/medi-seeds/portal/navi/watch/?co=88&ct=V" target="_blank" rel="noopener noreferrer" class="codex-card flex flex-col h-full overflow-hidden reveal hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group">
+                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line shrink-0 overflow-hidden">
+                            <img src="images/facial_nerve_decompression.png" alt="顔面神経減荷術" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                            <!-- Play Badge (Top Right) -->
+                            <div class="absolute top-3 right-3 shrink-0">
+                                <span class="px-2.5 py-1 bg-brand-teal text-white rounded text-xs font-bold tracking-wider shadow-sm flex items-center gap-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    動画を再生
+                                </span>
+                            </div>
+                            <!-- Duration Badge (Bottom Right) -->
+                            <div class="absolute bottom-3 right-3 shrink-0">
+                                <span class="px-1.5 py-0.5 bg-black/75 text-white rounded text-[10px] font-bold tracking-wider">
+                                    04:51
+                                </span>
                             </div>
                         </div>
-                        <div class="p-5">
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-brand-navy text-sm sm:text-base">1. 鼓室形成術動画</h4>
-                                <span class="text-xs text-brand-muted bg-gray-100 px-2 py-1 rounded">準備中</span>
+                        <div class="p-5 flex-grow flex flex-col">
+                            <div class="flex items-center justify-between mb-3 shrink-0">
+                                <h4 class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">1. 顔面神経減荷術</h4>
                             </div>
+                            <p class="text-xs text-brand-muted leading-relaxed mt-1">
+                                正常な側頭骨例に乳突削開術を行う顔面神経減荷術の動画です。<br>
+                                乳突削開は耳科手術の基本的術式の一つです。そこから追加で顔面神経の減荷を行います。<br>
+                                顔面神経麻痺の概要と耳科手術で出てくる基本的なランドマークも示しています。手術見学前に是非ご覧下さい。
+                            </p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Video 2 -->
-                    <div class="codex-card block overflow-hidden reveal opacity-75 cursor-default" style="transition-delay: 100ms;">
-                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line">
-                            <img src="https://placehold.co/600x338/f0f4f8/1b6ca8?text=Video+Thumbnail" alt="鼻内内視鏡手術動画" class="object-cover w-full h-full opacity-60">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span class="px-3 py-1.5 bg-gray-900/60 text-white rounded text-xs font-bold tracking-wider">準備中</span>
+                    <a href="https://v.classtream.jp/medi-seeds/portal/navi/watch/?co=89&ct=V" target="_blank" rel="noopener noreferrer" class="codex-card flex flex-col h-full overflow-hidden reveal hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group" style="transition-delay: 100ms;">
+                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line shrink-0 overflow-hidden">
+                            <img src="images/endoscopic_sinus_surgery.png" alt="内視鏡下鼻副鼻腔手術" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                            <!-- Play Badge (Top Right) -->
+                            <div class="absolute top-3 right-3 shrink-0">
+                                <span class="px-2.5 py-1 bg-brand-teal text-white rounded text-xs font-bold tracking-wider shadow-sm flex items-center gap-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    動画を再生
+                                </span>
+                            </div>
+                            <!-- Duration Badge (Bottom Right) -->
+                            <div class="absolute bottom-3 right-3 shrink-0">
+                                <span class="px-1.5 py-0.5 bg-black/75 text-white rounded text-[10px] font-bold tracking-wider">
+                                    06:11
+                                </span>
                             </div>
                         </div>
-                        <div class="p-5">
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-brand-navy text-sm sm:text-base">2. 鼻内内視鏡手術動画</h4>
-                                <span class="text-xs text-brand-muted bg-gray-100 px-2 py-1 rounded">準備中</span>
+                        <div class="p-5 flex-grow flex flex-col">
+                            <div class="flex items-center justify-between mb-3 shrink-0">
+                                <h4 class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">2. 内視鏡下鼻副鼻腔手術</h4>
                             </div>
+                            <p class="text-xs text-brand-muted leading-relaxed mt-1">
+                                内視鏡下鼻副鼻腔手術(ESS)の内、全ての副鼻腔を解放するESSⅣ型のダイジェストになります。<br>
+                                鼻腔内の解剖と、各副鼻腔を解放する際の手順、操作部位に対応するCT画像を説明しています。<br>
+                                医学生や初期研修医の鼻手術の予習にご活用下さい。
+                            </p>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Video 3 -->
-                    <div class="codex-card block overflow-hidden reveal opacity-75 cursor-default" style="transition-delay: 200ms;">
-                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line">
-                            <img src="https://placehold.co/600x338/f0f4f8/1b6ca8?text=Video+Thumbnail" alt="頸部郭清手術動画" class="object-cover w-full h-full opacity-60">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <span class="px-3 py-1.5 bg-gray-900/60 text-white rounded text-xs font-bold tracking-wider">準備中</span>
+                    <a href="https://v.classtream.jp/medi-seeds/portal/navi/watch/?co=90&ct=V" target="_blank" rel="noopener noreferrer" class="codex-card flex flex-col h-full overflow-hidden reveal hover:-translate-y-1 hover:shadow-lg transition-all duration-300 group" style="transition-delay: 200ms;">
+                        <div class="aspect-video relative bg-gray-100 border-b border-brand-line shrink-0 overflow-hidden">
+                            <img src="images/neck_dissection.png" alt="頸部郭清術" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300">
+                            <!-- Play Badge (Top Right) -->
+                            <div class="absolute top-3 right-3 shrink-0">
+                                <span class="px-2.5 py-1 bg-brand-teal text-white rounded text-xs font-bold tracking-wider shadow-sm flex items-center gap-1">
+                                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                    動画を再生
+                                </span>
+                            </div>
+                            <!-- Duration Badge (Bottom Right) -->
+                            <div class="absolute bottom-3 right-3 shrink-0">
+                                <span class="px-1.5 py-0.5 bg-black/75 text-white rounded text-[10px] font-bold tracking-wider">
+                                    05:36
+                                </span>
                             </div>
                         </div>
-                        <div class="p-5">
-                            <div class="flex items-center justify-between">
-                                <h4 class="font-bold text-brand-navy text-sm sm:text-base">3. 頸部郭清手術動画</h4>
-                                <span class="text-xs text-brand-muted bg-gray-100 px-2 py-1 rounded">準備中</span>
+                        <div class="p-5 flex-grow flex flex-col">
+                            <div class="flex items-center justify-between mb-3 shrink-0">
+                                <h4 class="font-bold text-brand-navy text-sm sm:text-base group-hover:text-brand-blue transition-colors">3. 頸部郭清術</h4>
                             </div>
+                            <p class="text-xs text-brand-muted leading-relaxed mt-1">
+                                頭頸部外科の基本手術である頸部郭清術の解説動画です。手術の流れや術野で確認すべき解剖学的ランドマークを中心に紹介しています。<br>
+                                医学生や初期研修医の予習に適した内容ですので、ぜひご活用ください。
+                            </p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>
