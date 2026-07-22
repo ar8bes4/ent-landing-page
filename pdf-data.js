@@ -20,6 +20,15 @@
 const PDF_DATA = [
   // --- 1. 医局紹介・広報関連・新聞報道 ---
   {
+    title: "はんだ山の風 第63号（ロボット支援手術）",
+    category: "広報誌",
+    pdfUrl: "pdfs/202607_handayama_vol63.pdf",
+    thumbnail: "",
+    publishDate: "2026-07",
+    author: "浜松医科大学附属病院",
+    description: "附属病院広報誌「はんだ山の風」第63号に掲載された、当科のロボット支援手術（Da Vinci Xi / hinotori）の特集記事です。耳鼻咽喉科・頭頸部外科領域における最新の低侵襲医療と診療体制について紹介されています。"
+  },
+  {
     title: "学会誌寄稿：教室紹介（研究室だより）",
     category: "学会雑誌",
     pdfUrl: "pdfs/202606_jiaio_misawa.pdf",
